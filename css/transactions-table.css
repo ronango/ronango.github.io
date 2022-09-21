@@ -62,6 +62,10 @@
     background-repeat:no-repeat;
 }
 
+#demo{
+    font-size: 20px;
+}
+
 .live {
     font-style: normal;
     font-weight: normal;

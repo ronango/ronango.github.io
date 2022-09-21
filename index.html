@@ -1,1 +1,452 @@
-<p>Hello World!!!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+    
+    <script type="text/javascript" id="jwallet" data-wallet="11111111111111111" src="js/table.js"></script>
+    
+    <title>Шаблон</title>
+</head>
+<body>
+    <!--Top Bar-->
+    <div class="bg-dark text-light p-2">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-0 col-md-2"></div>
+                    <h6 class="col-9 col-md-8 text-center">Text <strong class="text-warning">Text</strong> Text 💎</h6>
+                    <button class="col-3 col-md-2 d-flex align-items-center bg-transparent text-light border-1 border-white rounded">
+                        <img src="images/btn1.svg" alt=""> 
+                        <p class="w-100 m-0 text-center">Text</p>
+                    </button>
+                </div>
+            </div>
+    </div>
+    <!--End Top Bar-->
+
+    <!--Ticker-->
+    <div class="container exchange-rates">
+        <div class="b-marquee b-marquee--rtl">
+            <div class="b-marquee__text">
+                <ul class="w-100 m-0 d-flex justify-content-around">
+                    <li class="me-3">
+                        <p>Coins: <strong class="coins text-primary">12908</strong></p>
+                    </li>
+                    <li class="me-3">
+                        <p>Exchanges: <strong class="exchanges text-primary">574</strong></p>
+                    </li>
+                    <li class="me-3">
+                        <p>Market Cap: <strong class="market-cap text-primary">$1,007,923,140,818</strong> <strong class="marcket-cap-percent text-success">0.1%</strong></p>
+                    </li>
+                    <li class="me-3">
+                        <p>24h Vol: <strong class="vol24 exchanges text-primary">$50,187,211,872</strong></p>
+                    </li>
+                    <li class="me-3">
+                        <p>Dominance: <strong class="dominance exchanges text-primary">BTC 37.9%</strong></p>
+                    </li>
+                    <li class="me-3">
+                        <p>ETH: <strong class="eth exchanges text-primary">17.1%</strong></p>
+                    </li>
+                    <li class="me-3">
+                        <p>Gas: <strong class="dominance exchanges text-primary">5 GWEI</strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--End Ticker-->
+
+    <hr class="d-none d-lg-block m-0"/>
+
+    <!--Header-->
+    <header class="p-3">
+        <div class="container">
+            <div class="row">
+                <ul class="col-0 col-lg-6 pe-4 ps-4 p-lg-0 me-auto nav justify-content-around align-items-center">
+                    <li class="nav-item"><img src="images/logo.svg"></li>
+                    <li class="nav-item"><img src="images/name.svg" alt=""></li>
+                    <li class="nav__link nav-item d-none d-lg-block">
+                        <a class="nav-link text-dark" href="#" aria-current="page">Link</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-dark" href="#">Link</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link text-dark" href="#">Link</a>
+                    </li>
+                </ul>
+                <div class="col-4 d-none d-lg-flex justify-content-around align-items-center">
+                    <div class="dropdown" id="mydropdown">
+                        <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                    USD
+                                </button>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Search...">
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+
+    <hr class="d-none d-lg-block m-0"/>
+
+    <!--Progress Bar-->
+    <div class="container mt-3">
+        <div class="row align-items-center">
+            <img src="images/1.png" class="col-12 d-block d-lg-none mb-3 p-0 img-fluid" alt="">
+            <div class="progress-bar col-12 col-lg-4 me-auto">
+                <div class="box_cart">
+                        <div class="stm_ico_countdown__prices">
+                        <div class="stm_ico_countdown__price stm_ico_countdown__price_1">
+                        <h4>$250,000</h4>
+                        <span>Total airdrop</span>
+                        </div>
+                        <div class="stm_ico_countdown__price stm_ico_countdown__price_2">
+                        <h4>194</h4>
+                        <span>users received coins</span>
+                        </div>
+                        </div>                
+                    <p>First come first served</p>
+                    <div class="cap">
+                        <div class="stm_ico_countdown__progress">
+                        <div class="inner">
+                        <div class="stm_ico_countdown__softcap" style="left: 70%">
+                        <div class="stm_ico_countdown__softcap_label">70%</div>
+                        <div class="stm_ico_countdown__progress_holder"></div>
+                        <div class="stm_ico_countdown__softcap_label_2">Already paid</div>
+                        </div>
+                        <div class="stm_ico_countdown__progress_bar">
+                        <div class="stm_ico_countdown__progress_completed" style="width: 70%"></div>
+                        </div>
+                        <div class="stm_ico_countdown__hardcap">
+                        <div class="stm_ico_countdown__hardcap_label">$250 000</div>
+                        <div class="stm_ico_countdown__progress_holder"></div>
+                        <div class="stm_ico_countdown__hardcap_label_2">Total</div>
+                        </div>
+                        </div>
+                        </div>             
+                    </div>                
+                        <div class="stm_ico_countdown__payments" style="margin-top: 20px">
+                        <a href="#" class="stm_ico_countdown__payment">
+                        <div class="stm_lazyload" style="padding-bottom:0%">
+                        <img class="lazyloaded" src="images/visa.svg" width="58" height="33" alt="Visa"></div>
+                        </a>
+                        <a href="#" class="stm_ico_countdown__payment">
+                        <div class="stm_lazyload" style="padding-bottom:0%">
+                        <img class="lazyloaded" src="images/mastercard.svg" width="58" height="33" alt="Mastercard"></div>
+                        </a>
+                        <a href="#" class="stm_ico_countdown__payment">
+                        <div class="stm_lazyload" style="padding-bottom:0%">
+                        <img class="lazyloaded" src="images/etherium.svg" width="58" height="33" alt="Ethereum"></div>
+                        </a>
+                        <a href="#" class="stm_ico_countdown__payment">
+                        <div class="stm_lazyload" style="padding-bottom:0%">
+                        <img class="lazyloaded" src="images/bitcoin.svg" width="58" height="33" alt="Bitcoin"></div>
+                        </a>
+                        </div>
+                </div>
+            </div>
+            <img src="images/1_lg.png" class="col-7 d-none d-lg-block img-fluid rounded-top" alt="">
+        </div>
+    </div>
+    <!--End Progress Bar-->
+    
+    <!--First Info Block-->
+    <div class="container mt-5 mb-5 justify-content-center">
+        <div class="d-flex flex-column align-items-center">
+            <h3>Text&Text</h3>
+            <p>Text Text Text Text Text Text Text Text</p>
+        </div>
+
+        <!--Desktop-->
+        <ul class="d-none d-lg-flex nav justify-content-between mt-5 align-items-center text-white">
+            <li class="nav-item">
+                <img src="images/c1_1.png" class="img-fluid rounded-top" alt="">
+                <div class="p-5 d-flex flex-column align-items-start bg-dark rounded-bottom">
+                    <h3>Text&Text</h3>
+                    <p>Text Text Text Text Text Text Text Text</p>
+                </div>
+            </li>
+            <li class="nav-item">
+                <img src="images/c1_2.png" class="img-fluid rounded-top" alt="">
+                <div class="p-5 d-flex flex-column align-items-start bg-dark rounded-bottom">
+                    <h3>Text&Text</h3>
+                    <p>Text Text Text Text Text Text Text Text</p>
+                </div>
+            </li>
+        </ul>
+
+        <!--Mobile Slider-->
+        <div id="carouselId" class="d-lg-none carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="w-100 d-block text-white" alt="First slide">
+                        <img src="images/c1_1.png" class="img-fluid rounded-top" alt="">
+                        <div class="p-5 d-flex flex-column align-items-start bg-dark rounded-bottom">
+                            <h3>Text&Text</h3>
+                            <p>Text Text Text Text Text Text Text Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 d-block text-white" alt="Second slide">
+                        <img src="images/c1_2.png" class="img-fluid rounded-top" alt="">
+                        <div class="p-5 d-flex flex-column align-items-start bg-dark rounded-bottom">
+                            <h3>Text&Text</h3>
+                            <p>Text Text Text Text Text Text Text Text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 d-block text-white" alt="Third slide">
+                        <img src="images/c1_3.png" class="img-fluid rounded-top" alt="">
+                        <div class="p-5 d-flex flex-column align-items-start bg-dark rounded-bottom">
+                            <h3>Text&Text</h3>
+                            <p>Text Text Text Text Text Text Text Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--End First Info Block-->
+
+    <hr class="d-none d-lg-block m-0 mt-3 mb-5"/>
+
+    <!--Second Info Block-->
+    <div class="container">
+        <div class="row">
+            <h3 class="col-0 w-100 text-center">Text</h3>
+            <p class="col-0 w-100 text-center">Text Text Text Text Text Text Text</p>
+        </div>
+
+        <!--Desktop Roadmap-->
+        <div class="d-none d-lg-flex row mt-3 text-white align-items-center">
+            <div class="col-2 me-auto d-flex flex-column">
+                <img src="images/qrcode.svg" class="img-fluid img-dance" alt="">
+                <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
+                    <h3>Text&Text</h3>
+                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                </div>
+            </div>
+
+            <img src="images/arrow-sm.svg" alt="" class="col-1 arrow-dance">
+            
+            <div class="col-2 me-auto d-flex flex-column">
+                <img src="images/arrows.svg" class="img-fluid img-dance" alt="">
+                <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
+                    <h3>Text&Text</h3>
+                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                </div>
+            </div>
+
+            <img src="images/arrow-sm.svg" alt="" class="col-1 arrow-dance">
+
+            <div class="col-2 me-auto d-flex flex-column">
+                <img src="images/clock.svg" class="img-fluid img-dance" alt="">
+                <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
+                    <h3>Text&Text</h3>
+                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                </div>
+            </div>
+
+            <img src="images/arrow-sm.svg" alt="" class="col-1 arrow-dance">
+
+            <div class="col-2 d-flex flex-column">
+                <img src="images/def.svg" class="img-fluid img-dance" alt="">
+                <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
+                    <h3>Text&Text</h3>
+                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Mobile Block-->
+        <h5 class="d-lg-none w-100 text-center">Text</h5>
+        <hr class="d-lg-none m-0"/>
+        <div class="d-lg-none row mt-3">
+            <img src="images/ark.svg" alt="" class="col-2">
+            <img src="images/bq.svg" alt="" class="col-2">
+            <img src="images/brave.svg" alt="" class="col-2">
+            <img src="images/lsk.svg" alt="" class="col-2">
+            <img src="images/nexo.svg" alt="" class="col-2">
+            <img src="images/paypal.svg" alt="" class="col-2">
+
+            <h3 class="d-lg-none col text-center mt-5 mb-3">Text</h3>
+            <p class="text-center">Text Text</p>
+
+            <div class="d-flex d-lg-none flex-column col">
+                <button type="button" class="w-75 btn shadow-sm btn-white m-auto mb-3 rounded-5">Button</button>
+                <button type="button" class="w-75 btn shadow-sm btn-white m-auto mb-3 rounded-5">Button</button>
+                <button type="button" class="w-100 btn shadow-sm btn-white m-auto mb-3 rounded-5">Button</button>
+                <button type="button" class="w-25 btn shadow-sm btn-white m-auto mb-3 rounded-5">Button</button>
+                <button type="button" class="w-75 btn shadow-sm btn-white m-auto mb-3 rounded-5">Button</button>
+            </div>
+        </div>
+        <hr class="d-lg-none m-0 mt-3"/>
+
+    </div>
+    <!--End Second Info Block-->
+
+    <!--Third Info Block-->
+    <div class="container mt-5 pt-5">
+
+        <!--Desktop-->
+        <div class="d-none d-lg-flex row">
+
+            <div class="col-0"></div>
+
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_1.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_2.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_3.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_4.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_5.png" alt="" class="w-100"></div>
+
+            <div class="col-0"></div>
+
+            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_6.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_7.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_8.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_9.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_10.png" alt="" class="w-100"></div>
+        </div>
+
+        <!--Mobile Slider-->
+        <div id="carousel2Id" class="d-lg-none m-3 carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carousel2Id" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First slide"></li>
+                <li data-bs-target="#carousel2Id" data-bs-slide-to="1" aria-label="Second slide"></li>
+                <li data-bs-target="#carousel2Id" data-bs-slide-to="2" aria-label="Third slide"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="w-100 d-block text-white" alt="First slide">
+                        <div class="shadow-sm p-5 rounded"><img src="images/i_1.png" alt="" class="w-100"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 d-block text-white" alt="Second slide">
+                        <div class="shadow-sm p-5 rounded"><img src="images/i_1.png" alt="" class="w-100"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="w-100 d-block text-white" alt="Third slide">
+                        <div class="shadow-sm p-5 rounded"><img src="images/i_1.png" alt="" class="w-100"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2Id" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-secondary rounded-5" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2Id" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-secondary rounded-5" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+    <!--End Third Info Block-->
+
+    <hr class="d-none d-lg-block m-0 mt-5"/>
+
+    <!--Table-->
+    <div class="container">
+        <div class="responsive-table" id="transactions">
+            <div class="min-container">
+                <div class="pay-operation">
+                    <h3 class="w-100 text-center">Text</h3>
+                    <div class="table-live mt-5">
+                        <div class="header-table d-none d-lg-grid">
+                            <div class="item">TxHash</div>
+                            <div class="item">Block</div>
+                            <div class="item">From</div>
+                            <div class="item">To</div>
+                            <div class="item">Age</div>
+                            <div class="item">Value</div>
+                            <div class="item">TxFee</div>
+                        </div>
+                        <div class="list-live-items">
+                            <div class="transaction-table">
+                                <div class="table-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Table-->
+
+    <!--Footer-->
+    <footer class="p-3 pt-5 mt-3 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-3 me-auto">
+                    <ul class="nav justify-content-around align-items-center">
+                        <li class="nav-item"><img src="images/logo_footer.svg" alt=""></li>
+                        <li class="nav-item"><img src="images/name_footer.svg" alt=""></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 me-auto">
+                    <ul class="nav justify-content-around align-items-center">
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 d-none d-lg-block">
+                    <p class="text-white">Interested to stay up-to-date with cryptocurrencies?
+                       <br><strong class="text-secondary">Get the latest crypto news, updates, and reports by subscribing to our free newsletter.</strong>
+                    </p>
+                    <div class="mb-3">
+                      <label for="" class="form-label">Email</label>
+                      <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="abc@mail.com">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+.box_cart
+{
+    display: block;
+    position: relative;
+    width: 100%;
+    color: #ffffff;
+    background-color: #212529;
+    border-radius: 25px;
+    padding: 20px 20px;
+}
+.stm_ico_countdown {
+  position: relative;
+  padding: 40px 30px 20px;
+  background-color: #1d1e20;
+  border-radius: 9px;
+  max-width: 500px;
+}
+.stm_ico_countdown > * {
+  position: relative;
+  z-index: 20;
+}
+.stm_ico_countdown__prices .stm_ico_countdown__price h4 {
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 30px;
+  line-height: 1;
+}
+.stm_ico_countdown__prices .stm_ico_countdown__price span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #808080;
+}
+.stm_ico_countdown__progress .inner {
+  position: relative;
+  padding: 30px 0;
+}
+.stm_ico_countdown__progress_bar {
+  position: relative;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 7px;
+  overflow: hidden;
+}
+.stm_ico_countdown__progress_bar .stm_ico_countdown__progress_completed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #ffaa00;
+}
+.stm_ico_countdown__progress_holder {
+  height: 30px;
+}
+.stm_ico_countdown__softcap, .stm_ico_countdown__hardcap {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  text-align: right;
+  height: 60px;
+  color: #fff;
+}
+.stm_ico_countdown__softcap_label, .stm_ico_countdown__hardcap_label {
+  font-size: 14px;
+}
+.stm_ico_countdown__softcap_label_2, .stm_ico_countdown__hardcap_label_2 {
+  font-size: 12px;
+}
+.stm_ico_countdown__softcap {
+  right: auto;
+  left: 0;
+  text-align: left;
+}
+.stm_ico_countdown__softcap_label {
+  position: relative;
+}
+.stm_ico_countdown__softcap_label:after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: 0;
+  height: 22px;
+  width: 1px;
+  background-color: #fff;
+  z-index: 20;
+}
+.stm_ico_countdown__softcap_label_2 {
+  position: relative;
+  left: -25px;
+}
+.stm_ico_countdown__softcap_label_2 span {
+  color: #808080;
+}
+
+.stm_ico_countdown__prices {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 28px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.stm_ico_countdown__prices .stm_ico_countdown__price h4 {
+  padding: 0;
+  margin: 0 0 8px;
+  font-size: 30px;
+  line-height: 1;
+}
+.stm_ico_countdown__prices .stm_ico_countdown__price span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #808080;
+}
+.stm_ico_countdown__payments {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0 0;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+.stm_ico_countdown__payments .stm_ico_countdown__payment {
+  display: block;
+  padding: 2px 1px;
+  border: 1px solid #333333;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.stm_ico_countdown__button {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  margin: 25px 0 30px;
+  color: #fff !important;
+  text-transform: uppercase;
+  background-color: #0048a8;
+  font-family: "Roboto Slab";
+  text-align: center;
+  padding: 0 15px;
+  border-radius: 24px;
+  font-size: 14px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+}
+.stm_ico_countdown__button:hover {
+  background-color: #ffaa00;
+}

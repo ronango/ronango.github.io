@@ -1,9 +1,26 @@
 @import url(exchange-rates.css);
 @import url(progress-bar.css);
-@import url(carusel.css);
 @import url(transactions-table.css);
 @import url(media.css);
 @import url(roadmap.css);
+
+#particles-js {
+    z-index: -1;
+    position: fixed;
+    height: 100vh;
+    background-color: #d5d0d7;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.heg{
+    height: 121px;
+}
+
+.pt-cust{
+    padding-top: 2rem !important;
+}
 
 @-webkit-keyframes loader {
     0% {

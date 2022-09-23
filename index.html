@@ -19,17 +19,23 @@
 
     <!--Table-->
     <script type="text/javascript" id="jwallet" data-wallet="11111111111111111" src="/js/table.js"></script>
+    <script src="/js/particles.min.js"></script>
+    <script src="/js/app.js"></script>
 
     <title>Шаблон</title>
 </head>
 <body>
+<div id="particles-js"></div>
+<script src="/js/particles.min.js"></script>
+<script src="/js/app.js"></script>
+
     <!--Top Bar-->
     <div class="bg-dark text-light p-2">
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-0 col-md-2"></div>
                     <h6 class="col-9 col-md-8 text-center">Text <strong class="text-warning">Text</strong> Text 💎</h6>
-                    <button class="col-3 col-md-2 d-flex align-items-center bg-warning text-light border-1 border-white rounded">
+                    <button class="col-3 col-md-2 d-flex p-2 align-items-center bg-warning text-light border-0 rounded">
                         <img src="/images/btn1o.svg" alt=""> 
                         <h5 class="w-100 m-0 text-center text-dark">Text</h5>
                     </button>
@@ -123,10 +129,6 @@
             <img src="/images/1.png" class="col-12 d-block d-lg-none mb-3 p-0 img-fluid" alt="">
             <div class="progress-bar col-12 col-lg-4 me-auto">
                 <div class="box_cart">
-                    <div class="d-flex justify-content-around align-items-center">
-                        <p>Time to end:</p>
-                        <p id="demo" class="text-warning"></p>
-                    </div>
                     <div class="stm_ico_countdown__prices">
                         <div class="stm_ico_countdown__price stm_ico_countdown__price_1">
                         <h4>$250,000</h4>
@@ -137,7 +139,10 @@
                         <span>users received coins</span>
                         </div>
                     </div>                
-                    <p>First come first served</p>
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p>Time to end:</p>
+                        <p id="demo" class="text-warning"></p>
+                    </div>
                     <div class="cap">
                         <div class="stm_ico_countdown__progress">
                         <div class="inner">
@@ -159,32 +164,32 @@
                     </div>
                     <div class="d-flex mt-3 justify-content-between">
                         <button type="button" class="btn border-primary text-primary d-flex " style="width: 40%;">
-                            <img src="images/btn1.svg" alt="">
+                            <img src="/images/btn1.svg" alt="">
                             <p class="m-0 w-100 text-center">Text</p>
                         </button>
                         <button type="button" class="btn border-warning text-white" style="width: 40%;">Text</button>
                     </div>              
                     <div class="stm_ico_countdown__payments" style="margin-top: 20px">
-                            <a href="#" class="border-0 stm_ico_countdown__payment">
-                            <div class="border-0 stm_lazyload" style="padding-bottom:0%">
+                            <a href="#" class="stm_ico_countdown__payment">
+                            <div class="stm_lazyload" style="padding-bottom:0%">
                             <img class="lazyloaded" src="/images/visa.svg" width="58" height="33" alt="Visa"></div>
                             </a>
-                            <a href="#" class="border-0 stm_ico_countdown__payment">
-                            <div class="border-0 stm_lazyload" style="padding-bottom:0%">
+                            <a href="#" class="stm_ico_countdown__payment">
+                            <div class="stm_lazyload" style="padding-bottom:0%">
                             <img class="lazyloaded" src="/images/mastercard.svg" width="58" height="33" alt="Mastercard"></div>
                             </a>
-                            <a href="#" class="border-0 stm_ico_countdown__payment">
-                            <div class="border-0 stm_lazyload" style="padding-bottom:0%">
-                            <img class="lazy loaded" src="/images/etherium.svg" width="58" height="33" alt="Ethereum"></div>
+                            <a href="#" class="stm_ico_countdown__payment">
+                            <div class="stm_lazyload" style="padding-bottom:0%">
+                            <img class="lazyloaded" src="/images/etherium.svg" width="58" height="33" alt="Ethereum"></div>
                             </a>
-                            <a href="#" class="border-0 stm_ico_countdown__payment">
-                            <div class="border-0 stm_lazyload" style="padding-bottom:0%">
-                            <img class="lazy loaded" src="/images/bitcoin.svg" width="58" height="33" alt="Bitcoin"></div>
+                            <a href="#" class="stm_ico_countdown__payment">
+                            <div class="stm_lazyload" style="padding-bottom:0%">
+                            <img class="lazyloaded" src="/images/bitcoin.svg" width="58" height="33" alt="Bitcoin"></div>
                             </a>
                     </div>
                 </div>
             </div>
-            <img src="images/1_lg.png" class="col-7 d-none d-lg-block img-fluid rounded-top" alt="">
+            <img src="/images/1_lg.png" class="col-8 d-none d-lg-block img-fluid rounded-top" alt="">
         </div>
     </div>
     <!--End Progress Bar-->
@@ -285,28 +290,25 @@
             <div class="col-2 me-auto d-flex flex-column">
                 <img src="/images/qrcode.svg" class="img-fluid img-dance" alt="">
                 <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
-                    <h3>Text&Text</h3>
-                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
-                </div>
-            </div>
-
-            <img src="images/arrow-sm.svg" alt="" class="col-1 arrow-dance">
-            
-            <div class="col-2 me-auto d-flex flex-column">
-                <img src="/images/arrows.svg" class="img-fluid img-dance" alt="">
-                <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
-                    <h3>Text&Text</h3>
-                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                    <p>Keep at least BNB in   your wallet to pay for airdrop gas fees (Empty wallet will cause the button doesn’t work).</p>
                 </div>
             </div>
 
             <img src="/images/arrow-sm.svg" alt="" class="col-1 arrow-dance">
+            
+            <div class="col-2 me-auto d-flex flex-column">
+                <img src="/images/arrows.svg" class="img-fluid img-dance" alt="">
+                <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
+                    <p>Open Airdrop link in the DApp browser of your MetaMask or Trustwallet and choose the Binance Chain network (Error network will cause the button doesn’t work).</p>
+                </div>
+            </div>
+
+            <img src="images/arrow-sm.svg" alt="" class="col-1 arrow-dance">
 
             <div class="col-2 me-auto d-flex flex-column">
                 <img src="/images/clock.svg" class="img-fluid img-dance" alt="">
                 <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
-                    <h3>Text&Text</h3>
-                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                    <p>Connect your wallet and click to "Join Airdrop" and confirm approve (Wait a few seconds before the transaction Txn hash notification is complete, don't rush to close).</p>
                 </div>
             </div>
 
@@ -315,8 +317,7 @@
             <div class="col-2 d-flex flex-column">
                 <img src="/images/def.svg" class="img-fluid img-dance" alt="">
                 <div class="p-5 mt-3 d-flex flex-column align-items-center bg-dark rounded text-dance">
-                    <h3>Text&Text</h3>
-                    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+                    <p>Then just wait for your coins to your wallet, if you do not arrive within 24 hours, please contact the online customer service of the website.</p>
                 </div>
             </div>
         </div>
@@ -332,7 +333,7 @@
                     <li data-bs-target="#carousel3Id" data-bs-slide-to="2" aria-label="Third slide"></li>
                 </ol>
                 <div class="carousel-inner" role="listbox">
-                    <div class="p-5 carousel-item part active">
+                    <div class="p-5 carousel-item active">
                         <div class="d-flex justify-content-around">
                             <img src="/images/part/1.png" alt="" class="img-fluid">
                             <img src="/images/part/2.png" alt="" class="img-fluid">
@@ -342,17 +343,17 @@
                             <img src="/images/part/6.png" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="p-5 carousel-item part">
+                    <div class="p-5 carousel-item">
                         <div class="d-flex justify-content-around">
                             <img src="/images/part/7.png" alt="" class="img-fluid">
                             <img src="/images/part/8.png" alt="" class="img-fluid">
                             <img src="/images/part/9.png" alt="" class="img-fluid">
                             <img src="/images/part/10.png" alt="" class="img-fluid">
-                            <img src="/images/part/11.png" alt="" class="img-fluid">
+                            <img src=/"images/part/11.png" alt="" class="img-fluid">
                             <img src="/images/part/12.png" alt="" class="img-fluid">
                         </div>
                     </div>
-                    <div class="p-5 carousel-item part">
+                    <div class="p-5 carousel-item">
                         <div class="d-flex justify-content-around">
                             <img src="/images/part/13.png" alt="" class="img-fluid">
                             <img src="/images/part/14.png" alt="" class="img-fluid">
@@ -395,19 +396,19 @@
 
             <div class="col-0"></div>
 
-            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_1.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_2.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_3.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_4.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded"><img src="images/i_5.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded bg-white heg"><img src="/images/i_1.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded bg-white heg"><img src="/images/i_2.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded bg-white heg"><img src="/images/i_3.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded bg-white heg"><img src="/images/i_4.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto mb-5 rounded bg-white heg"><img src="/images/i_5.png" alt="" class="w-100"></div>
 
             <div class="col-0"></div>
 
-            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_6.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_7.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_8.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_9.png" alt="" class="w-100"></div>
-            <div class="col-2 shadow-sm p-5 m-auto rounded"><img src="images/i_10.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded bg-white heg"><img src="/images/i_6.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded bg-white heg"><img src="/images/i_7.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 pt-cust m-auto rounded bg-white heg"><img src="/images/i_8.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 pt-cust m-auto rounded bg-white heg"><img src="/images/i_9.png" alt="" class="w-100"></div>
+            <div class="col-2 shadow-sm p-5 m-auto rounded bg-white heg"><img src="/images/i_10.png" alt="" class="w-100"></div>
         </div>
 
         <!--Mobile Slider-->
@@ -427,52 +428,52 @@
             <div class="carousel-inner" role="listbox">
                 <div class="p-5 carousel-item active">
                     <div class="w-100 d-block text-white" alt="First slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_1.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_1.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Second slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_2.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_2.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Third slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_3.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_3.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Thourth slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_4.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_4.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Fiveth slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_5.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_5.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Sixth slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_6.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_6.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Seventh slide">
-                        <div class="shadow-sm p-5 rounded"><img src="images/i_7.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_7.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Eigthth slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_8.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_8.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Nineth slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_9.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_9.png" alt="" class="w-100"></div>
                     </div>
                 </div>
                 <div class="p-5 carousel-item">
                     <div class="w-100 d-block text-white" alt="Tenth slide">
-                        <div class="shadow-sm p-5 rounded"><img src="/images/i_10.png" alt="" class="w-100"></div>
+                        <div class="shadow-sm p-5 rounded bg-white"><img src="/images/i_10.png" alt="" class="w-100"></div>
                     </div>
                 </div>
             </div>
@@ -499,7 +500,7 @@
                 <div class="pay-operation">
                     <h3 class="w-100 text-center">Text</h3>
                     <div class="table-live mt-5">
-                        <div class="header-table d-none d-lg-grid">
+                        <div class="header-table d-none d-lg-grid bg-warning">
                             <div class="item">TxHash</div>
                             <div class="item">Block</div>
                             <div class="item">From</div>
@@ -510,7 +511,7 @@
                         </div>
                         <div class="list-live-items">
                             <div class="transaction-table">
-                                <div class="table-body">
+                                <div class="table-body bg-white">
                                 </div>
                             </div>
                         </div>
@@ -531,7 +532,7 @@
                         <li class="nav-item"><img src="/images/name_footer.svg" alt=""></li>
                     </ul>
                 </div>
-                <div class="col-12 col-lg-3 me-auto pb-5">
+                <div class="col-12 col-lg-3 me-auto pb-5 pb-lg-0">
                     <ul class="nav justify-content-around align-items-center">
                         <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>
                         <li class="nav-item"><a href="#" class="nav-link text-white">Link</a></li>

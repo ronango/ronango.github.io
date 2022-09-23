@@ -26,6 +26,14 @@
     width: 15%;
 }
 
+.h-200{
+    height: 200px;
+}
+
+.h-500{
+    height: 500px;
+}
+
 @-webkit-keyframes loader {
     0% {
         -webkit-transform: rotate(0deg);

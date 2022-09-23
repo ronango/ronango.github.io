@@ -98,7 +98,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 28px;
+  margin: 0 0 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }

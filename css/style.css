@@ -36,6 +36,24 @@
     width: 225px;
 }
 
+.t-sh{
+    text-shadow: 1px 0 1px #000, 
+                0 1px 1px #000, 
+                -1px 0 1px #000, 
+                0 -1px 1px #000;
+}
+
+.stm_ico_countdown__payment--without-bg{
+    display: block;
+    padding: 1px 1px;
+    align-self: center;
+}
+
+.border-cust{
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
 @-webkit-keyframes loader {
     0% {
         -webkit-transform: rotate(0deg);

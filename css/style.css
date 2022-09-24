@@ -3,12 +3,13 @@
 @import url(transactions-table.css);
 @import url(media.css);
 @import url(roadmap.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 #particles-js {
     z-index: -1;
     position: fixed;
     height: 100vh;
-    background-color: #d5d0d757;
+    background-color: #d5d0d7;
     top: 0;
     left: 0;
     width: 100vw;
@@ -24,16 +25,6 @@
 
 .w-cust{
     width: 15%;
-}
-
-.h-200{
-    height: 200px;
-    margin-left: 30px;
-}
-
-.h-250{
-    height: 250px;
-    width: 225px;
 }
 
 .t-sh{
@@ -52,6 +43,18 @@
 .border-cust{
     border: 1px solid #333333;
     border-radius: 3px;
+}
+
+.text-nsuccess{
+    color: #8BC636;
+}
+
+.border-nsuccess{
+    border: 2px solid #8BC636;
+}
+
+.fw-200{
+    font-weight: 200;
 }
 
 @-webkit-keyframes loader {

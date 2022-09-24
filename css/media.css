@@ -126,6 +126,11 @@
 		        justify-content: center;
 	}
 
+	.bg-s-ndark{
+		background: #2D2D2D;
+		color: #ffffff;
+	}
+
 	.responsive-pay {
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: reverse;

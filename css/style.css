@@ -57,6 +57,10 @@
     font-weight: 200;
 }
 
+.fs-tag{
+    font-size: 9px;
+}
+
 @-webkit-keyframes loader {
     0% {
         -webkit-transform: rotate(0deg);

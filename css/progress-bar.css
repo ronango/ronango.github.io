@@ -154,8 +154,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 70px;
+  font-size: 35px;
+  line-height: 40px;
   /* or 101% */
 
   text-align: center;
@@ -170,7 +170,8 @@
 
 #demo thead{
   font-size: 16px;
-  line-height: 26px;
+  line-height: 9px;
+  text-align: center;
   /* or 108% */
   letter-spacing: 0.02em;
   font-feature-settings: 'tnum' on, 'lnum' on;

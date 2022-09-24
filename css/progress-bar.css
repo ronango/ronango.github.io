@@ -35,11 +35,12 @@
 .stm_ico_countdown__progress .inner {
   position: relative;
   padding: 30px 0;
+  margin-top: -27px;
 }
 .stm_ico_countdown__progress_bar {
   position: relative;
   height: 15px;
-  background: rgba(255, 255, 255, 0.25);
+  background: #2D2D2D;
   border-radius: 7px;
   overflow: hidden;
 }
@@ -48,7 +49,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #ffaa00;
+  background-color: #FFE400;
 }
 .stm_ico_countdown__progress_holder {
   height: 30px;
@@ -59,7 +60,6 @@
   top: 4px;
   text-align: right;
   height: 60px;
-  color: #fff;
 }
 .stm_ico_countdown__softcap_label, .stm_ico_countdown__hardcap_label {
   font-size: 14px;
@@ -98,7 +98,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 0 20px;
+  margin: 0 0 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
@@ -147,4 +147,33 @@
 }
 .stm_ico_countdown__button:hover {
   background-color: #ffaa00;
+}
+
+
+#demo tbody{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 70px;
+  /* or 101% */
+
+  text-align: center;
+  letter-spacing: 0.065em;
+
+  color: #F5C344;
+}
+
+.bg-ndark{
+  background: #2D2D2D;
+}
+
+#demo thead{
+  font-size: 16px;
+  line-height: 26px;
+  /* or 108% */
+  letter-spacing: 0.02em;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+
+  color: #FFFFFF;
 }

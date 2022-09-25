@@ -3,6 +3,7 @@
 @import url(transactions-table.css);
 @import url(media.css);
 @import url(roadmap.css);
+@import url(custom-styles.css)
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @-webkit-keyframes loader {

@@ -1,6 +1,6 @@
 // Set the date we're counting down to
 var today = new Date();
-var countDownDate = new Date(`${today.getFullYear()}-${today.getMonth() < 9 ? 0: ''}${today.getMonth() + 1}-${today.getDate() + 1}T00:00:00`);
+var countDownDate = new Date(`${today.getFullYear()}-${today.getMonth() < 9 ? 0: ''}${today.getMonth() + 1}-${today.getDate() < 9 ? 0: ''}${today.getDate() + 1}T00:00:00`);
 
 // Update the count down every 1 second
 var x = setInterval(function() {

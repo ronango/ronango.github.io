@@ -9,7 +9,7 @@ h1{
     font-weight: 800 !important;
 }
 
-h4{
+h2, h4{
     font-weight: 700 !important;
 }
 
@@ -17,6 +17,10 @@ button{
     background: none;
     border: none;
 }
+
+/*
+* Header block
+*/
 
 .header-block{
     height: 600px;
@@ -36,7 +40,7 @@ button{
 }
 
 .bs-plan{
-    height: 70px;
+    height: 80px;
 
     background: #F7F4EF;
     box-shadow: 0px 10px 50px rgba(208, 146, 96, 0.3);
@@ -49,3 +53,46 @@ button{
     text-align: center;
     letter-spacing: 0.05em;
 }
+
+
+/*
+* For-what block
+*/
+
+.for-what{
+    background-image: url(../img/for-what-bg.png);
+    padding: 3rem !important;
+    padding-bottom: 15rem !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.for-what__list{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.for-what__list li{
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    border-left: 2px solid #444444;
+    width: 75%;
+    height: 45%;
+}
+.for-what__list li img{
+    position: relative;
+    right: 17px;
+}
+.for-what__list li p{
+    margin-left: 15px;
+}
+.for-what__list:last-child li:last-child{
+    margin-top: -25px;
+}
+.bs-plan-dark{
+    color: #FFFFFF;
+    background-color: #444444;
+}
+

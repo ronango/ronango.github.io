@@ -5,17 +5,46 @@ body{
     font-family: 'Montserrat', sans-serif !important;
 }
 
+/*
+* Headers
+*/
+
 h1{
     font-weight: 800 !important;
 }
-
-h2, h4{
+h2, h4, h6{
     font-weight: 700 !important;
 }
+
+/*
+* Buttons
+*/
 
 button{
     background: none;
     border: none;
+}
+.bs-plan{
+    height: 80px;
+
+    background: #F7F4EF;
+    box-shadow: 0px 10px 50px rgba(208, 146, 96, 0.3);
+    border-radius: 10px;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+.bs-plan--dark{
+    color: #FFFFFF;
+    background-color: #444444;
+}
+.bs-plan--pink {
+    box-shadow: 0px 10px 50px #F363E2;
+    border-radius: 10px;
 }
 
 /*
@@ -37,21 +66,6 @@ button{
 
 .header{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.bs-plan{
-    height: 80px;
-
-    background: #F7F4EF;
-    box-shadow: 0px 10px 50px rgba(208, 146, 96, 0.3);
-    border-radius: 10px;
-
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 21px;
-
-    text-align: center;
-    letter-spacing: 0.05em;
 }
 
 
@@ -90,10 +104,6 @@ button{
 }
 .for-what__list:last-child li:last-child{
     margin-top: -25px;
-}
-.bs-plan-dark{
-    color: #FFFFFF;
-    background-color: #444444;
 }
 
 /*
@@ -152,4 +162,65 @@ button{
     background: #FFFFFF;
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
     border-radius: 10px;
+}
+
+/*
+* About block
+*/
+
+.about{
+    padding: 40px 0;
+}
+.about__container picture{
+    width: 40%;
+    align-self: flex-end;
+}
+.about__container div{
+    width: 45%;
+}
+.about__container:nth-child(2) div ul{
+    list-style: none;
+    padding: 0;
+}
+
+/*
+* Benefits block
+*/
+
+.benefits{
+    padding: 40px 0;
+    background-image: url(../img/benefits.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.benefits ul{
+    list-style: none;
+    margin-top: 30px;
+}
+.benefits ul li{
+    width: 45%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    border: 1px solid #444444;
+    border-radius: 10px;
+}
+.benefits ul li picture{
+    position: relative;
+    bottom: 75px;
+}
+.benefits ul li:first-child picture{
+    bottom: 85px;
+}
+.benefits ul li picture img{
+    width: 50px;
+}
+.benefits ul li p{
+    text-align: center;
+    margin-top: -25px;
 }

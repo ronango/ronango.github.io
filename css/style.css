@@ -5,6 +5,10 @@ body{
     font-family: 'Montserrat', sans-serif !important;
 }
 
+.text-gray{
+    color: #444444;
+}
+
 /*
 * Headers
 */
@@ -214,13 +218,150 @@ button{
     position: relative;
     bottom: 75px;
 }
-.benefits ul li:first-child picture{
+.benefits ul li:first-child picture,
+.benefits ul li:last-child picture{
     bottom: 85px;
+}
+.benefits ul li picture::before{
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: 24px;
+    right: 50px;
+    height: 1px;
+    width: 50px;
+    color: transparent;
+    background: #ebebeb;
+}
+.benefits ul li:first-child picture::before,
+.benefits ul li:last-child picture::before{
+    top: 22px;
+}
+.benefits ul li picture::after{
+    content: "";
+    display: block;
+    position: relative;
+    z-index: 1;
+    top: -27px;
+    left: 50px;
+    height: 1px;
+    width: 50px;
+    color: transparent;
+    background: #ebebeb;
+}
+.benefits ul li:first-child picture::after,
+.benefits ul li:last-child picture::after{
+    top: -29px;
 }
 .benefits ul li picture img{
     width: 50px;
+    position: inherit;
+    z-index: 999;
 }
 .benefits ul li p{
     text-align: center;
     margin-top: -25px;
+    color: #444444;
+}
+
+/*
+* Receiving block
+*/
+.receiving{
+    padding: 70px 0;
+}
+.receiving h2{
+    width: 24%;
+    margin-left: 66%;
+    margin-bottom: 70px;
+}
+.receiving__list{
+    display: flex;
+}
+.receiving__list ul{
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+}
+.receiving__list li{
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 40%;
+    margin-left: 5%;
+}
+.receiving__list li img{
+    position: relative;
+    right: 17px;
+}
+
+/*
+* Tariffs block
+*/
+
+.tariffs{
+    background-image: url(../img/rec-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #444444;
+}
+
+.tariffs__options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.tariffs__options .option{
+    width: 25%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #E0E0E0;
+    border-radius: 10px;
+}
+.tariffs__options .option__list{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 132px;
+}
+
+/*
+* Community block
+*/
+
+.community{
+    padding-bottom: 90px;
+}
+.community__container div{
+    width: 45%;
+}
+
+/*
+* Founders block
+*/
+
+.founders{
+    padding: 100px 0;
+    background-image: url(../img/founders.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.founders ul{
+    list-style: none;
+    padding: 0;
+    width: 50%;
+}
+.founders h2{
+    margin-bottom: 5S0px;
+}
+.founders ul li{
+    margin-top: 20px;
 }

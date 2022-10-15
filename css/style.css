@@ -41,14 +41,23 @@ button{
 
     text-align: center;
     letter-spacing: 0.05em;
+
+    transition: all 1s;
+}
+.bs-plan:hover{
+    box-shadow: 0px 10px 100px rgba(208, 146, 96, 0.3);
+    transform: scale(1.05);
 }
 .bs-plan--dark{
     color: #FFFFFF;
     background-color: #444444;
 }
 .bs-plan--pink {
-    box-shadow: 0px 10px 50px #F363E2;
+    box-shadow: 0px 0px 5px 5px #F363E2;
     border-radius: 10px;
+}
+.bs-plan--pink:hover{
+    box-shadow: 0px 0px 15px 5px #F363E2;
 }
 
 /*
@@ -299,6 +308,110 @@ button{
 }
 
 /*
+* Roadmap block
+*/
+
+.roadmap{
+    background-color: #F0F0F0;
+    position: relative;
+}
+.roadmap h2{
+    margin-left: 20%;
+}
+.roadmap ul{
+    list-style: disc;
+}
+.roadmap ul li::marker{
+    font-weight: 400 !important;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    background-color: #F0F0F0;
+
+    width: 60% !important;
+    padding-top: 40px;
+
+    opacity: 0.15;
+}
+.swiper-slide-active{
+    opacity: 1;
+}
+
+.swiper-slide__content{
+    background: #FAFAFA;
+    border: 2px solid #444444;
+    border-radius: 10px;
+}
+.swiper-slide-active .swiper-slide__content{
+    border: none;
+}
+.swiper-slide__content .stage{
+
+    bottom: 15px;
+}
+.swiper-slide__content .stage h3{
+    padding: 12px;
+    background: #444444;
+    box-shadow: 0px 0px 20px rgb(127 49 139 / 80%);
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+}
+.swiper-slide__content ol li{
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: left;
+}
+.swiper-slide__content ol li::marker{
+    font-weight: 900;
+}
+.swiper-slide__content img{
+    width: 45%;
+}
+.swiper-slide__content img:last-child{
+    width: 60% !important;
+}
+.swiper-slide__content div:last-child{
+    width: 40% !important;
+}
+.roadmap__slider ul{
+    list-style: decimal;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 21% !important;
+    top: 15px !important;
+
+    background-image: url(../img/slider/next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.swiper-button-next::after{
+    content: "" !important;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 74% !important;
+    top: 15px !important;
+    
+    background-image: url(../img/slider/prev.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.swiper-button-prev::after{
+    content: "" !important;
+}
+
+/*
 * Tariffs block
 */
 
@@ -364,4 +477,53 @@ button{
 }
 .founders ul li{
     margin-top: 20px;
+}
+
+/*
+* Support block
+*/
+
+.support{
+    background-image: url(../img/support.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.support ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.support ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.support ul li p{
+    width: 66%;
+}
+
+/*
+* Feedback block 
+*/
+
+.feedback{
+    background-color: #555555;
+}
+.feedback form input{
+    width: 48%;
+    background-color: #F0F0F0;
+}
+.feedback form input::placeholder{
+    color: #ABABAB;
+}
+
+/*
+* Footer
+*/
+
+footer p{
+    width: 30%;
+    font-size: 10px;
 }

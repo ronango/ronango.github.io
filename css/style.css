@@ -129,17 +129,17 @@ button{
 .heading .menu .menu__mobile{
     position: fixed;
     z-index: 10;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	padding: 15px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
     background: #444444;
-	transform: translateX(-100%);
-	transition: transform 0.5s; 
+    transform: translateX(-100%);
+    transition: transform 0.5s; 
 }
 .heading .menu .menu__mobile.active {
-	transform: translateX(0);
+    transform: translateX(0);
 }
 .heading .menu .menu__btn.active span:nth-of-type(1) {
     display: none;
@@ -172,7 +172,7 @@ button{
     width: 30px;
 }
 .heading .menu .menu__mobile li a p{
-    margin-left: 30px;
+    margin-left: 30px !important;
     font-size: 26px;
 }
 

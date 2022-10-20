@@ -177,7 +177,7 @@ button{
 
 @media (max-width: 767px){
     .header-block{
-        height: 480px;
+        height: 500px;
     }
     .heading .menu{
         width: 100%;

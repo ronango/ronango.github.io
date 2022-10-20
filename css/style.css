@@ -105,26 +105,26 @@ button{
 }
 .heading .menu .menu__btn{
     width: 30px;
-	height: 30px;
-	position: relative;
-	z-index: 12;
-	overflow: hidden;
+    height: 30px;
+    position: relative;
+    z-index: 12;
+    overflow: hidden;
 }
 .heading .menu .menu__btn span:nth-of-type(2) {
-	top: calc(50% - 5px);
+    top: calc(50% - 5px);
 }
 .heading .menu .menu__btn span:nth-of-type(3) {
-	top: calc(50% + 5px);
+    top: calc(50% + 5px);
 }
 .heading .menu .menu__btn span {
-	width: 30px;
-	height: 2px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #FFFFFF;
-	transition: all 0.5s;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    transition: all 0.5s;
 }
 .heading .menu .menu__mobile{
     position: fixed;
@@ -156,8 +156,8 @@ button{
     margin-top: 50px;
 }
 .heading .menu .menu__mobile li {
-	list-style-type: none;
-    	font-size: 26px;
+    list-style-type: none;
+    font-size: 26px;
 }
 .heading .menu .menu__mobile li:last-child,
 .heading .menu .menu__mobile li:first-child{
@@ -186,7 +186,6 @@ button{
     }
     .heading .menu{
         width: 100%;
-        margin-bottom: 20px;
     }
     .heading .menu h4{
 	font-size: 28px;

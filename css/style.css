@@ -946,6 +946,7 @@ button{
 @media (max-width: 767px){
     .feedback .container p{
         font-size: 13px;
+	width: 261px;
     }
     .feedback br{
        display: none;  

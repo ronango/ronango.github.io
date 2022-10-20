@@ -180,6 +180,13 @@ button{
     .header-block{
         height: 500px;
     }
+    .header{
+	border: none;
+        width: 100% !important;
+    }
+    .heading{
+	width: 93%;
+    }
     .heading .menu{
         width: 100%;
         margin-bottom: 20px;
@@ -199,12 +206,17 @@ button{
         height: 60px;
         width: 90% !important;
         margin: auto;
+	margin-top: 155px !important;
     }
     .header-block h1{
         font-size: 26px !important;
     }
-    .header-block p{
-        font-size: 17px;
+    .header-block .heading p{
+        width: 48%;
+	font-size: 13px;
+	margin: 0 !important;
+	margin-right: auto !important;
+	text-align: left !important;
     }
     .header-block h1 br, .header-block p br{
         display: none;

@@ -159,7 +159,8 @@ button{
 	list-style-type: none;
     font-size: 26px;
 }
-.heading .menu .menu__mobile li:last-child {
+.heading .menu .menu__mobile li:last-child,
+.heading .menu .menu__mobile li:first-child{
     font-size: 32px;
     font-weight: 600;
 }

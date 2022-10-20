@@ -20,3 +20,11 @@ var swiperSm = new Swiper(".slider-sm__swiper", {
     disableOnInteraction: false,
   }
 })
+
+let menuBtn = document.querySelector('.heading .menu .menu__btn');
+let menu = document.querySelector('.heading .menu .menu__mobile');
+menuBtn.addEventListener('click', function(){
+	menu.classList.toggle('active');
+  menuBtn.classList.toggle('active');
+  document.querySelector('body').classList.toggle('menu-active')
+})

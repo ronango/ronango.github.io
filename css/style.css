@@ -842,6 +842,9 @@ button{
     .community__container:first-child picture{
         width: auto;
     }
+    .community__container:last-child ul li {
+        margin-bottom: 15px;
+    }
     .community__container div{
         width: 90%;
         margin: 50px auto;

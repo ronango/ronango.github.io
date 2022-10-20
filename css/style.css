@@ -4,6 +4,9 @@
 body{
     font-family: 'Montserrat', sans-serif !important;
 }
+body.menu-active{
+    overflow: hidden;
+}
 
 .text-gray{
     color: #444444 !important;
@@ -100,8 +103,86 @@ button{
     width: 17px;
     height: 15px;
 }
+.heading .menu .menu__btn{
+    width: 30px;
+	height: 30px;
+	position: relative;
+	z-index: 12;
+	overflow: hidden;
+}
+.heading .menu .menu__btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.heading .menu .menu__btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+.heading .menu .menu__btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #FFFFFF;
+	transition: all 0.5s;
+}
+.heading .menu .menu__mobile{
+    position: fixed;
+    z-index: 10;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+    background: #444444;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+}
+.heading .menu .menu__mobile.active {
+	transform: translateX(0);
+}
+.heading .menu .menu__btn.active span:nth-of-type(1) {
+    display: none;
+}
+.heading .menu .menu__btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+.heading .menu .menu__btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+}
+.heading .menu .menu__mobile ul{
+    margin-top: 50px;
+}
+.heading .menu .menu__mobile li {
+	list-style-type: none;
+    font-size: 26px;
+}
+.heading .menu .menu__mobile li:last-child {
+    font-size: 32px;
+    font-weight: 600;
+}
+.heading .menu .menu__mobile li a{
+    text-decoration: none;
+    color: #F7F4EF;
+}
+.heading .menu .menu__mobile li a img{
+    width: 30px;
+}
+.heading .menu .menu__mobile li a p{
+    margin-left: 30px;
+    font-size: 26px;
+}
 
 @media (max-width: 767px){
+    .header-block{
+        height: 480px;
+    }
+    .heading .menu{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .header-block .container:last-child{
         width: 100% !important;
     }
@@ -111,10 +192,12 @@ button{
         text-decoration: none;
     }
     .header-block div:last-child button{
-        width: 100% !important;
+        height: 60px;
+        width: 90% !important;
+        margin: auto;
     }
     .header-block h1{
-        font-size: 30px !important;
+        font-size: 26px !important;
     }
     .header-block p{
         font-size: 15px;
@@ -255,7 +338,9 @@ button{
     }
     .why__block:before{
         right: 60px;
-        top: -55px !important;
+        top: -25px !important;
+        padding: 25px;
+        background-size: 30px;
     }
     .why__block:first-child::before{
         box-shadow: 0px 10px 50px rgb(105 0 198 / 70%);
@@ -323,6 +408,15 @@ button{
     }
     .about__container div h2{
         font-size: 20px;
+    
+    }
+    .about__container:first-child div h2{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .about__container:first-child div h6{
+        font-size: 20px;
+        margin-bottom: 30px;
     }
     .about__container:last-child div h2{
         font-size: 30px;
@@ -438,9 +532,10 @@ button{
         width: 100%;
         margin: 0;
         margin-top: 70px;
+        padding: 20px;
     }
-    .benefits ul li:first-child picture, .benefits ul li:last-child picture{
-        bottom: 75px;
+    .benefits ul li picture{
+        bottom: 45px !important;
     }
     .benefits ul li picture::after,
     .benefits ul li picture::before{
@@ -455,8 +550,8 @@ button{
     padding: 50px 0;
 }
 .receiving h2{
-    width: 18%;
-    margin-left: 71%;
+    width: 100%;
+    text-align: center;
     margin-bottom: 50px;
 }
 .receiving__list{
@@ -719,8 +814,21 @@ button{
 .community__container div{
     width: 45%;
 }
+.community__container:first-child div{
+    width: 35%;
+}
+.community__container:first-child picture{
+    width: 50%;
+}
+
 
 @media (max-width: 767px){
+    .community__container:first-child div{
+        width: auto;
+    }
+    .community__container:first-child picture{
+        width: auto;
+    }
     .community__container div{
         width: 90%;
         margin: 50px auto;
@@ -798,7 +906,7 @@ button{
 
 @media (max-width: 767px){
     .support{
-        background: #f9f8f8;
+        background-size: cover;
     }
     .support div{
         width: 90%;
@@ -820,6 +928,9 @@ button{
 }
 
 @media (max-width: 767px){
+    .feedback .container p{
+        font-size: 13px;
+    }
     .feedback br{
        display: none;  
     }

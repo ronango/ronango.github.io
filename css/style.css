@@ -177,10 +177,7 @@ button{
 }
 
 @media (max-width: 767px){
-    .header-block{
-        height: 500px;
-    }
-    .header{
+    .header-block .header{
 	border: none;
         width: 100% !important;
     }

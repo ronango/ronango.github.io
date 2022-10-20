@@ -183,6 +183,9 @@ button{
         width: 100%;
         margin-bottom: 20px;
     }
+    .heading .menu h4{
+	font-size: 28px;
+    }
     .header-block .container:last-child{
         width: 100% !important;
     }
@@ -200,7 +203,7 @@ button{
         font-size: 26px !important;
     }
     .header-block p{
-        font-size: 15px;
+        font-size: 17px;
     }
     .header-block h1 br, .header-block p br{
         display: none;

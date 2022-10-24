@@ -882,7 +882,7 @@ button{
 	position: relative;
 	z-index: 1;
         padding: 0;
-        background-position-x: -1300px;
+        background-position-x: -1250px;
     }
     .founders .bg-filter{
 	position: absolute;

@@ -879,13 +879,8 @@ button{
 
 @media (max-width: 767px){
     .founders{
-	background: url(../img/founders-mob.webp);
-	padding: 57px 0;
-    }
-    .founders img{
-	width: 57%;
-        transform: scale(2.5);
-        margin-top: 50px;   
+	background: url(../img/founders-mobile.webp);
+	padding: 20px 0;
     }
     .founders h2{
         width: 90%;

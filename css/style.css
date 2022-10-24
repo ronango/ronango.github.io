@@ -879,9 +879,10 @@ button{
 
 @media (max-width: 767px){
     .founders{
-        height: 700px;
+        height: 1200px;
         background: url(../img/founders-mobile.webp);
         background-size: 800px;
+	background-position: center;
         padding: 20px 0;
     }
     .founders h2{
@@ -892,6 +893,9 @@ button{
         width: 90%;
         font-size: 15px;
         margin: 0 auto;
+    }
+    .founders ul li{
+        margin-top: 15px;
     }
 }
 

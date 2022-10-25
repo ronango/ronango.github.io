@@ -37,7 +37,7 @@ body{
     z-index: 0;
     animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
 }
-.circle-pulse-bg::before{
+.hello_block__bg::before{
     content: "";
     position: absolute;
     left: 0;

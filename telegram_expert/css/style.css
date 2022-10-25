@@ -2,15 +2,20 @@ body{
     background-color: #17181A;
 }
 div{
-    position: absolute;
     width: 50vw;
     height: 50vw;
-    border: 2px solid #19D3D97D;
-    border-radius: 50%;
-    animation: 4s ease-in-out 2s infinite alternate both running svelte-17fr7vk-radiusPulse;
+    background: 0 0;
+    position: absolute;
+    border-radius: 999em;
+    z-index: 0;
+    border: 4px solid #19D3D97D;
+    left: -10vw;
+    top: -10vw;
+    opacity: .2;
+    animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
 }
 
-@keyframes svelte-17fr7vk-radiusPulse{
+@keyframes circlePulse{
     0% {
         transform: scale(1);
     }

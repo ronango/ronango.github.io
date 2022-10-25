@@ -7,7 +7,7 @@ div{
     height: 50vw;
     border: 2px solid #19D3D97D;
     border-radius: 50%;
-    transition: 4s ease-in-out 2s infinite alternate both running svelte-17fr7vk-radiusPulse;
+    animation: 4s ease-in-out 2s infinite alternate both running svelte-17fr7vk-radiusPulse;
 }
 
 @keyframes svelte-17fr7vk-radiusPulse{

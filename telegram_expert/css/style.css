@@ -12,9 +12,29 @@ body{
     opacity: .2;
     animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
 }
+.circle-pulse::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 40vw;
+    height: 40vw;
+    background: linear-gradient(131.5deg,#111728 48.9%,rgba(17,23,39,0) 82.15%);
+    filter: blur(10px);
+    overflow: visible;
+}
 .circle-top{
     left: -10vw;
     top: -10vw;
+}
+.circle-inner-top{
+    width: 50vw;
+    height: 50vw;
+    left: -10vw;
+    top: -10vw;
+    transform-origin: center center;
+    animation: 4s ease-in-out 0s infinite alternate both running circlePulseSmall;
 }
 .circle-bottom{
     left: auto;
@@ -30,5 +50,13 @@ body{
     }
     100% {
         transform: scale(1.2);
+    }
+}
+@keyframes circlePulseSmall{
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(.8);
     }
 }

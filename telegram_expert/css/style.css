@@ -37,7 +37,7 @@ body{
     z-index: 0;
     animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
 }
-.circle-pulse::before{
+.circle-pulse-bg::before{
     content: "";
     position: absolute;
     left: 0;
@@ -45,7 +45,7 @@ body{
     z-index: 1;
     width: 40vw;
     height: 40vw;
-    background: linear-gradient(131.5deg,#111728 48.9%,rgba(17,23,39,0) 82.15%);
+    background: #17181A;
     filter: blur(10px);
     overflow: visible;
 }

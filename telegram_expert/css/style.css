@@ -1,8 +1,104 @@
+@import url('http://fonts.cdnfonts.com/css/montserrat');
+@import url('http://fonts.cdnfonts.com/css/gilroy-bold');
+
 body{
     background-color: #17181A;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+/*
+* Buttons
+*/
+.btn{
+    width: 30%;
+    padding: 15px 40px;
+
+    color: #19D3D9;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 1em;
+
+    border: 3px solid #19D3D9;
+    border-radius: 12px;
+}
+.btn--bg{
+    color: #0D131F;
+    background: #19D3D9;
+    border-color: none;
+    border-radius: 12px;
+}
+
+/*
+* Header
+*/
+.header{
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 90px;
+    padding: 0 60px;
+
+    background: linear-gradient(90deg, #17181A 0.55%, #1B1C1F 100%);
+}
+.header .header__logo{
+    width: 12%;
+
+    font-size: 0.8em;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu{
+    width: 50%;
+     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .menu__burger{
+    display: none;
+}
+.menu .menu__list{
+    width: 100%;
+
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.menu .menu__list .list__item{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+.menu .menu__btns{
+    width: 100%;
+    margin-left: 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .menu__btns .btn{
+    width: 40%;
+
+    font-size: 0.7em;
+    font-weight: 800;
+
+    padding: 10px 10px;
+    text-align: center ;
+}
+
+
 /*
 * Hello block
 */

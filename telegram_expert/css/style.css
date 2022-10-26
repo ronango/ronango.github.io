@@ -218,3 +218,13 @@ a{
         transform: scale(.8);
     }
 }
+
+/*
+* Our community
+*/
+
+.our_community{
+    position: relative;
+    background-color: #FFFFFF;
+    min-height: 90vh;
+}

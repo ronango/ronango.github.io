@@ -13,14 +13,16 @@ const observerFadeRight = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fade-right');
-            document.querySelector('.app').classList.add('app--active');
+            if (entry.target.tagName == 'IMG'){
+                document.querySelector('.app').classList.add('app--active');
+            }
         }
     });
 });
 
 observerFadeRight.observe(document.querySelector('.app img'));
 observerFadeRight.observe(document.querySelector('.app .btn'));
-observerFadeRight.observe(document.querySelector('.app .btn'));
+observerFadeRight.observe(document.querySelector('.hello_block p'));
 
 
 /**
@@ -37,6 +39,8 @@ observerFadeRight.observe(document.querySelector('.app .btn'));
 
 observerFadeLeft.observe(document.querySelector('.our_community h3'));
 observerFadeLeft.observe(document.querySelector('.our_community__tabs'));
+observerFadeLeft.observe(document.querySelector('.hello_block h1'));
+observerFadeLeft.observe(document.querySelector('.hello_block__btns'));
 
 
 /**

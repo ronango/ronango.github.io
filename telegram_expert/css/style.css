@@ -1,6 +1,10 @@
 @import url('http://fonts.cdnfonts.com/css/montserrat');
 @import url('http://fonts.cdnfonts.com/css/gilroy-bold');
 
+
+/*
+* Based settings
+*/
 body{
     background-color: #17181A;
     padding: 0;
@@ -15,6 +19,127 @@ a{
     text-decoration: none;
     color: #FFFFFF;
 }
+
+/*
+* Animations
+*/
+@media (prefers-reduced-motion: no-preference) {
+    .circle--pulse{
+        animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
+    }
+    .circleSmall--pulse{
+        animation: 4s ease-in-out 0s infinite alternate both running circlePulseSmall;
+    }
+    .fade-right{
+        animation: fadeInRight 1s ease-in-out;
+    }
+    .fade-left{
+        animation: fadeInLeft 1s ease-in-out;
+    }
+    .fade-top{
+        animation: fadeInTop 1s ease-in-out;
+    }
+  }
+
+@keyframes circlePulse{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes circlePulseSmall{
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(.8);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(150px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-150px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeInTop {
+    from {
+      opacity: 0;
+      transform: translateY(-150px);
+    }
+    to {
+      opacity: 1;
+    }
+}
+/*
+* Background
+*/
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.bg__circle{
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+
+    opacity: .5;
+    border-radius: 999em;
+    border: 4px solid #19D3D97D;
+    z-index: 0;
+}
+.bg::before{
+    content: "";
+    position: absolute;
+    left: -38vw;
+    top: 10vw;
+    z-index: 1;
+    width: 85vw;
+    height: 20vw;
+    background: #17181A;
+    box-shadow: 0 0 20px 20px #17181a;
+    overflow: visible;
+    transform: rotate(-30deg);
+}
+.circle--top{
+    left: -10vw;
+    top: -10vw;
+}
+.circle--inner-top{
+    width: 50vw;
+    height: 50vw;
+    left: -10vw;
+    top: -10vw;
+    transform-origin: center center;
+}
+.circle--bottom{
+    left: auto;
+    top: auto;
+    bottom: -10vw;
+    right: -10vw;
+    animation-delay: 1.4s;
+}
+
 /*
 * Buttons
 */
@@ -152,73 +277,6 @@ a{
 .hello_block__btns .btn{
     width: 30%;
 }
-.hello_block__bg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-.circle-pulse{
-    position: absolute;
-    width: 50vw;
-    height: 50vw;
-
-    opacity: .5;
-    border-radius: 999em;
-    border: 4px solid #19D3D97D;
-    z-index: 0;
-    animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
-}
-.hello_block__bg::before{
-    content: "";
-    position: absolute;
-    left: -38vw;
-    top: 10vw;
-    z-index: 1;
-    width: 85vw;
-    height: 20vw;
-    background: #17181A;
-    box-shadow: 0 0 20px 20px #17181a;
-    overflow: visible;
-    transform: rotate(-30deg);
-}
-.circle-pulse--top{
-    left: -10vw;
-    top: -10vw;
-}
-.circle-pulse--inner-top{
-    width: 50vw;
-    height: 50vw;
-    left: -10vw;
-    top: -10vw;
-    transform-origin: center center;
-    animation: 4s ease-in-out 0s infinite alternate both running circlePulseSmall;
-}
-.circle-pulse--bottom{
-    left: auto;
-    top: auto;
-    bottom: -10vw;
-    right: -10vw;
-    animation-delay: 1.4s;
-}
-
-@keyframes circlePulse{
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.2);
-    }
-}
-@keyframes circlePulseSmall{
-    0% {
-        transform: scale(.5);
-    }
-    100% {
-        transform: scale(.8);
-    }
-}
 
 /*
 * Our community
@@ -233,18 +291,22 @@ a{
     min-height: 90vh;
     padding-bottom: 5rem;
 }
-.our_community .our_community__aplication{
+.our_community .our_community__app{
     position: relative;
-    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
     display: flex;
     flex-direction: column;
     align-items: center;
     top: -10vw;
 }
-.our_community .our_community__aplication img {
+.our_community .our_community__app.app--active{
+    opacity: 1;
+}
+.our_community .our_community__app img {
     width: 1080px;
 }
-.our_community .our_community__aplication .btn{
+.our_community .our_community__app .btn{
     padding: 10px 50px;
     background: #3ED09B;
     color: #FFFFFF;
@@ -253,6 +315,7 @@ a{
     margin-bottom: 2rem;
 }
 .our_community__tabs {
+    width: 75%;
     border-radius: 13px;
     background: #FCFCFC;
   }
@@ -286,6 +349,7 @@ a{
 
     display: flex;
     align-items: center;
+    justify-content: center;
   }
   .tabs__btn:first-child{
     border-radius: 13px 0 0 13px;
@@ -313,19 +377,18 @@ a{
     position: relative;
     z-index: 0;
     background: #F2F2F2;
-    padding: 5rem 5rem;
     box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 13px 13px;
   }
 
   .tabs__pane {
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-
-  .tabs__pane .container{
     position: absolute;
-    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    opacity: 0;
+    
   }
 
   .tabs__pane p{
@@ -333,6 +396,7 @@ a{
   }
 
   .tabs__pane_show {
+    position: relative;
     opacity: 1;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
   }

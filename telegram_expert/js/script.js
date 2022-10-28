@@ -10,7 +10,7 @@ var window_height = (window.innerHeight ? window.innerHeight : (document.documen
  */
 
 const observerFadeRight = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fade-right');
             if (entry.target.tagName == 'IMG'){
@@ -29,8 +29,8 @@ observerFadeRight.observe(document.querySelector('.hello_block p'));
  * 2) Fade-left
  */
 
- const observerFadeLeft = new IntersectionObserver(entries => {
-    entries.forEach((entry, i) => {
+const observerFadeLeft = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fade-left');
         }
@@ -47,8 +47,8 @@ observerFadeLeft.observe(document.querySelector('.hello_block__btns'));
  * 3) Fade-top
  */
 
- const observerFadeTop = new IntersectionObserver(entries => {
-    entries.forEach((entry, i) => {
+const observerFadeTop = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('fade-top');
         }
@@ -56,3 +56,19 @@ observerFadeLeft.observe(document.querySelector('.hello_block__btns'));
 });
 
 observerFadeTop.observe(document.querySelector('.header'));
+
+/**
+ * Incoming Image
+ */
+
+const observerIncomingImage = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('incoming-image');
+        }
+    });
+
+});
+
+observerIncomingImage.observe(document.querySelector('.important__container .image-block--first'));
+observerIncomingImage.observe(document.querySelector('.important__container .image-block--second'));

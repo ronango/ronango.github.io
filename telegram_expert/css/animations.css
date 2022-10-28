@@ -3,12 +3,14 @@
 */
 
 @media (prefers-reduced-motion: no-preference) {
+    /*Circle animation*/
     .circle--pulse{
         animation: 4s ease-in-out 2s infinite alternate both running circlePulse;
     }
     .circleSmall--pulse{
         animation: 4s ease-in-out 0s infinite alternate both running circlePulseSmall;
     }
+    /*FadeIn animation*/
     .fade-right{
         animation: fadeInRight 1s ease-in-out;
     }
@@ -22,6 +24,7 @@
         transform: translate(0, 0);
         animation: incoming 1s ease-in-out;
     }
+    /*Image animation*/
     .incoming-image:hover{
         padding: 0;
         transform: translate(-3rem, -3rem);

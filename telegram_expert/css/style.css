@@ -224,7 +224,7 @@ a{
     align-items: center;
     background-color: #FFFFFF;
     min-height: 90vh;
-    padding-bottom: 5rem;
+    padding-bottom: 12rem;
 }
 .our_community .our_community__app{
     position: relative;
@@ -363,3 +363,60 @@ a{
   .text-block{
     margin-top: 3rem;
   }
+
+/*
+* Promotion
+*/
+
+.promotion{
+    background: #17181A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.promotion__top-block{
+    position: relative;
+    top: -8rem;
+    margin: 0 19rem;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+}
+.top-block__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #B6EBF3;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+.top-block__logo::before{
+    content: '';
+    display: block;
+    background-image: url(../img/Rocket.svg);
+    background-size: 4rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 7px solid #B6EBF3;
+    border-radius: 50%;
+    padding: 4rem;
+}
+.top-block__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.top-block__text p{
+    margin-top: 1rem;
+}
+.promotion__map{
+
+}
+.promotion__map img{
+    width: 60vw;
+}

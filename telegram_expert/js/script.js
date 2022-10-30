@@ -1,10 +1,10 @@
 /*Tabsx initialization*/
-let tabs = new ItcTabs('.tabs');
+const tabs = new ItcTabs('.tabs');
 
 /**
  * ANIMATIONS
  */
-var window_height = (window.innerHeight ? window.innerHeight : (document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.offsetHeight));
+const trainingImages = document.querySelectorAll('.training__stage .stage__pre img')
 /**
  * 1) Fade-right
  */
@@ -72,3 +72,33 @@ const observerIncomingImage = new IntersectionObserver(entries => {
 
 observerIncomingImage.observe(document.querySelector('.important__container .image-block--first'));
 observerIncomingImage.observe(document.querySelector('.important__container .image-block--second'));
+
+/**
+ * Translate image
+ */
+
+ const observerTranslatingRightImage = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('translate-rightImage');
+        }
+    });
+
+});
+const observerTranslatingLeftImage = new IntersectionObserver(entries => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('translate-leftImage');
+        }
+    });
+
+});
+
+trainingImages.forEach((el, index) =>{
+    if (index % 2 == 0) {
+        observerTranslatingRightImage.observe(el);
+    }else {
+        observerTranslatingLeftImage.observe(el);
+    }
+});
+

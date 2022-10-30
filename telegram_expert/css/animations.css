@@ -20,19 +20,22 @@
     .fade-top{
         animation: fadeInTop 1s ease-in-out;
     }
+    /*Image animation*/
     .incoming-image{
         transform: translate(0, 0);
         animation: incoming 1s ease-in-out;
     }
-    /*Image animation*/
-    .incoming-image:hover{
-        padding: 0;
-        transform: translate(-3rem, -3rem);
-        animation: outgoing 1s ease-in-out;
-    }
     .outgoing-image{
         transform: translate(-3rem, -3rem);
         animation: outgoing 1s ease-in-out;
+    }
+    .translate-rightImage{
+        transform: translate(-2rem, -2rem);
+        animation: translatingRight 1s ease-in-out;
+    }
+    .translate-leftImage{
+        transform: translate(2rem, -2rem);
+        animation: translatingLeft 1s ease-in-out;
     }
   }
 
@@ -104,4 +107,22 @@
         padding: 0;
         transform: translate(-3rem, -3rem);
     }
+}
+@keyframes translatingRight {
+        from {
+            transform: translate(0, 0);
+        }
+        to {
+            transform: translate(-2rem, -2rem);
+        }
+    
+}
+@keyframes translatingLeft {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(2rem, -2rem);
+    }
+
 }

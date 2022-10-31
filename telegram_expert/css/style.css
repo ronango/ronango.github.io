@@ -671,3 +671,45 @@ a{
     color: #FFFFFF;
     cursor: pointer;
 }
+
+/*
+* Dreams block
+*/
+
+.dreams{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    overflow: hidden;
+    z-index: 2;
+    padding: 5rem;
+    background-color: #FFFFFF;
+}
+.dreams .bg{
+    z-index: -1;
+}
+.dreams .bg::before{
+    display: none;
+}
+.dreams .bg__circle{
+    border-color: #17181a46;
+}
+.dreams .circle--top, .circle--inner-top{
+    left: 70vw;
+    top: -25vw;
+}
+.dreams .circle--bottom{
+    bottom: -35vw;
+    right: 70vw;
+}
+.dreams h2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #17181A;
+}
+.dreams img{
+    width: 40vw;
+}

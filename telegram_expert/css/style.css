@@ -397,7 +397,7 @@ a{
     justify-content: center;
     padding-bottom: 10rem;
 }
-.promotion__top-block{
+.top-block{
     position: relative;
     top: -8rem;
     margin: 0 19rem;
@@ -420,7 +420,7 @@ a{
 .top-block__logo::before{
     content: '';
     display: block;
-    background-image: url(../img/Rocket.svg);
+    background-image: url(../img/rocket.svg);
     background-size: 4rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -511,6 +511,7 @@ a{
 }
 .price--additional{
     background-color: #FFFFFF;
+    padding-bottom: 20rem;
 }
 .price .bg::before{
     display: none;
@@ -609,4 +610,64 @@ a{
 }
 .price--additional .option .btn{
     background: #B6EBF3;
+}
+
+/*
+* Request block
+*/
+
+.request{
+    padding-bottom: 10rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.request *{
+    z-index: 2;
+}
+.request .btn{
+    margin-top: -5rem;
+    padding: 0.5rem 3rem;
+}
+.request__top-block .top-block__logo::before{
+    background-image: url(../img/bag.svg);
+}
+.request__form, .form__head, .form__group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60vw;
+}
+.request__form{
+    margin-top: 10rem;
+}
+.form__group{
+    margin-top: 1rem;
+}
+.form__head{
+    width: 30vw;
+    color: #FFFFFF;
+}
+.form__group, .form__group input{
+    width: 80%;
+}
+.form__group input{
+    margin-top: 1rem;
+    padding: 1rem 0rem 1rem 2rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    border-color: transparent;
+    outline: none;
+}
+.form__group input:last-child{
+    padding-bottom: 5rem;
+}
+.request__form .btn{
+    margin-top: 2rem;
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
 }

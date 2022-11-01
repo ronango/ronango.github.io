@@ -713,3 +713,64 @@ a{
 .dreams img{
     width: 40vw;
 }
+
+/*
+* Footer
+*/
+
+footer{
+    color: #FFFFFF;
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.first{
+    padding: 5rem 0;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.first__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.first__logo p{
+    margin-left: 1rem;
+}
+.first__description{
+    margin: 2rem 0;
+}
+.first .btn{
+    padding: 0.5rem 2rem;
+    font-size: 0.7rem;
+}
+footer .by{
+    align-self: flex-end;
+}
+footer .by p{
+    text-align: center;
+}
+footer .menu{
+    padding: 5rem 0;
+    width: 30vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+footer .menu__list{
+    flex-direction: column;
+}
+footer .list__item{
+    margin-top: 0.8rem;
+}
+footer .list__header{
+    font-weight: 500 !important;
+    color: #FFFFFF;
+}
+
+

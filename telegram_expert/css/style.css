@@ -231,7 +231,7 @@ a{
     z-index: 2;
 }
 .hello_block p{
-    font-size: 1.2rem;
+    font-size: 1.4rem !important;
     max-width: 31em;
     text-align: center;
     margin: 3rem 0;
@@ -261,15 +261,23 @@ a{
 }
 
 @media (max-width: 767px){
+    .hello_block .bg .circle--top, .hello_block .bg .circle--inner-top{
+        top: 10vw;
+    }
     .hello_block h1{
         font-size: 2rem;
     }
     .hello_block p {
         font-size: 0.8rem !important;
+        max-width: 27em;
+        margin: 2rem 0;
     }
 }
 
 @media (max-width: 480px){
+    .hello_block{
+        padding: 1rem 0;
+    }
     .hello_block__btns{
         flex-direction: column;
         align-items: center;
@@ -452,6 +460,16 @@ a{
     .important__container *{
         width: 90%;
     }
+    .our_community .our_community__app img {
+        display: none;
+    }
+    .our_community .our_community__app{
+        opacity: 1;
+        top: 0;
+        margin: 2rem 0;
+        width: 75%;
+    }
+
 }
 
 
@@ -533,12 +551,26 @@ a{
     margin-top: 1rem;
 }
 
-@media (max-width: 1024px){
-
+@media (max-width: 1240px){
+    .top-block{
+        padding: 3rem 2rem;
+        margin: 0 2rem;
+    }
 }
 
-@media (max-width: 767px){
-    
+@media (max-width: 680px){
+    .top-block{
+        flex-direction: column;
+    }
+    .top-block__logo{
+        align-self: flex-start;
+    }
+    .top-block__logo::before{
+        padding: 3rem;
+    }
+    .top-block__text{
+        width: 100%;
+    }
 }
 
 /*
@@ -872,6 +904,7 @@ footer .by p{
 footer .menu{
     padding: 5rem 0;
     width: 30vw;
+    gap: 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -889,12 +922,29 @@ footer .list__header{
     color: #FFFFFF;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 1040px){
+    footer{
+        justify-content: center;
+        padding-left: 1rem;
+    }
 
 }
 
 @media (max-width: 767px){
-    
+    footer{
+        flex-direction: column;
+        padding-left: 5rem;
+    }
+    .first{
+        width: 100%;
+        align-items: center;
+    }
+    footer .menu{
+        display: none;
+    }
+    footer .by{
+        align-self: center;
+    }
 }
 
 

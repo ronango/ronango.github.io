@@ -181,7 +181,7 @@ a{
 
 @media (max-width: 1024px){
     .header{
-        padding: 0 10px;
+        padding: 2rem 0.3rem;
         position: relative;
         grid-template-columns: 2fr 3fr;
         row-gap: 1rem;
@@ -469,7 +469,9 @@ a{
         margin: 2rem 0;
         width: 75%;
     }
-
+    .image-block{
+        display: none;
+    }
 }
 
 
@@ -556,6 +558,16 @@ a{
         padding: 3rem 2rem;
         margin: 0 2rem;
     }
+    .promotion__map{
+        padding: 2rem;
+        margin-top: -6rem;
+    }
+    .promotion__map img{
+        width: 100%;
+    }
+    .count__container{
+        flex: 0 0 calc(50% - 2rem);
+    }
 }
 
 @media (max-width: 680px){
@@ -570,6 +582,16 @@ a{
     }
     .top-block__text{
         width: 100%;
+    }
+    .promotion{
+        padding-bottom: 5rem;
+    }
+    .promotion__count{
+        margin-top: 0;
+    }
+    .count__container{
+        flex: 0 0 100%;
+        margin-left: 0;
     }
 }
 
@@ -608,12 +630,31 @@ a{
     flex-direction: row-reverse;
 }
 
-@media (max-width: 1024px){
-
+@media (max-width: 1080px){
+    .training__stage{
+        flex-direction: column !important;
+    }
+    .training__stage .stage__text{
+        margin-bottom: 5rem;
+    }
+    .training__stage .stage__text, .training__stage .stage__pre img{
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px){
-    
+    .training_block{
+        padding: 2rem;
+    }
+    .training__stage{
+        margin-top: 5rem;
+    }
+    .training__stage .stage__text{
+        margin-bottom: 2rem;
+    }
+    .training__stage .stage__pre{
+        display: none;
+    }
 }
 
 
@@ -665,6 +706,9 @@ a{
     padding-top: 7rem;
     display: flex;
     justify-content: center;
+}
+.price--additional .price__options{
+    padding-top: 1rem;
 }
 .price--additional .price__options .option:nth-child(2){
     margin: 0 auto;
@@ -732,11 +776,55 @@ a{
 }
 
 @media (max-width: 1024px){
+    .price.price--additional{
+        padding-bottom: 12rem;
+    }
+    .price h2{
+        margin-bottom: 15rem
+    }
+    .price--additional h2{
+        margin-bottom: 3rem;
+    }
+    .price__options{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+    .price--additional .option ul{
+        width: auto;
+    }
+    .option h2{
+        margin-bottom: auto;
+    }
+    .option--unlimited{
+        margin-top: -10rem;
+    }
+    .option.option--demo{
+        margin: 10rem 2rem;
+    }
+    .price--additional .price__options .option:nth-child(2){
+        margin: 2rem 0;
+    }
+    .option--month{
+        margin-top: -12rem;
+    }
+    .option .btn{
+        width: auto;
+    }
+
 
 }
 
 @media (max-width: 767px){
-    
+    .price{
+        padding: 2rem;
+    }
+    .option h2{
+        font-size: 1.5rem;
+    }
+    .option h2, .option ul{
+        padding: 2rem 3rem;
+    }
 }
 
 
@@ -774,7 +862,8 @@ a{
     margin-top: 1rem;
 }
 .form__head{
-    width: 30vw;
+    width: 100%;
+    text-align: center;
     color: #FFFFFF;
 }
 .form__group, .form__group input{
@@ -801,11 +890,12 @@ a{
 }
 
 @media (max-width: 1024px){
-
-}
-
-@media (max-width: 767px){
-    
+    .request__form{
+        margin-top: 5rem;
+    }
+    .form__group, .form__group input{
+        width: 100%;
+    }
 }
 
 
@@ -851,12 +941,10 @@ a{
     width: 40vw;
 }
 
-@media (max-width: 1024px){
-
-}
-
-@media (max-width: 767px){
-    
+@media (max-width: 800px){
+    .dreams{
+        display: none;
+    }
 }
 
 
@@ -938,6 +1026,9 @@ footer .list__header{
     .first{
         width: 100%;
         align-items: center;
+    }
+    .first__description{
+        text-align: center;
     }
     footer .menu{
         display: none;

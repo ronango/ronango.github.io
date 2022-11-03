@@ -23,6 +23,9 @@ body.menu-active{
 .container{
     max-width: 1240px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 h3{
     font-size: 1.5rem !important;
@@ -449,10 +452,13 @@ a{
   }
 
 @media (max-width: 1350px){
+    .our_community__tabs{
+        width: 75%;
+    }
     .our_community__important{
-        margin-top: 5rem;
+        margin-top: 0;
         flex-direction: column;
-        gap: 5rem;
+        width: 90%;
     }
     .our_community__important .important__container{
         position: relative;
@@ -461,15 +467,11 @@ a{
         width: 100%;
     }
     .image-block{
-        position: inherit;
-        bottom: 0;
+        display: none;
     }
 }
 
 @media (max-width: 480px){
-    .important__container *{
-        width: 90%;
-    }
     .our_community .our_community__app img {
         display: none;
     }
@@ -479,7 +481,7 @@ a{
         margin: 2rem 0;
         width: 75%;
     }
-    .image-block{
+    .important__container{
         display: none;
     }
 }
@@ -598,6 +600,7 @@ a{
     }
     .promotion__count{
         margin-top: 0;
+        width: 90%;
     }
     .count__container{
         flex: 0 0 100%;
@@ -621,6 +624,7 @@ a{
     margin-top: 10rem;
     display: flex;
     justify-content: space-between;
+    gap: 5rem;
 }
 .training__stage .stage__text{
     width: 20vw;
@@ -902,6 +906,11 @@ a{
     cursor: pointer;
 }
 
+@media (max-width: 1350px){
+    .request__top-block{
+        width: 80%;
+    }
+}
 @media (max-width: 1024px){
     .request__form{
         margin-top: 5rem;

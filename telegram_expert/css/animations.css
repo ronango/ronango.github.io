@@ -106,10 +106,12 @@
 @keyframes incoming {
     from {
         padding: 0;
-        transform: translate(-3rem, -3rem);
+        margin-left: 0;
+        transform: translate(-3rem, -6.5rem);
     }
     to {
-        padding: 3rem 0 0 3rem;
+        margin-left: auto;
+        padding: 3rem 0 0 6.5rem;
         transform: translate(0, 0);
     }
 }

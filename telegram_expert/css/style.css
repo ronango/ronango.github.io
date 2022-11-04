@@ -21,7 +21,7 @@ body.menu-active{
     padding: 0;
 }
 .container{
-    max-width: 1240px;
+    max-width: 1500px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -161,9 +161,11 @@ a{
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     grid-area: a;
     justify-content: flex-end;
+
+    font-size: 0.85rem;
 }
 .header__list .list__item{
     font-size: 0.8em;
@@ -177,7 +179,7 @@ a{
     justify-content: flex-end;
 }
 .header__btns .btn{
-    width: 50%;
+    width: 150px;
 
     font-size: 0.7em;
     font-weight: 800;
@@ -234,7 +236,7 @@ a{
     width: 90%;
     max-width: 58rem;
     margin: 0 auto;
-    margin-top: 10rem;
+    margin-top: 8rem;
     font-size: 5rem;
     z-index: 2;
 }
@@ -242,7 +244,7 @@ a{
     font-size: 1.4rem !important;
     max-width: 31em;
     text-align: center;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 .hello_block__btns{
     min-width: 40rem;
@@ -251,7 +253,7 @@ a{
     display: flex;
     justify-content: center;
     margin-top: 0.75rem;
-    gap: 2rem;
+    gap: 4rem;
 }
 .hello_block__btns .btn{
     width: 30%;
@@ -318,24 +320,26 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -10vw;
+    top: -7vw;
 }
 .our_community .our_community__app.app--active{
     opacity: 1;
 }
 .our_community .our_community__app img {
-    width: 75%;
+    width: 90%;
 }
 .our_community .our_community__app .btn{
     padding: 10px 50px;
     background: #3ED09B;
+    border-radius: 11px;
     color: #FFFFFF;
 }
 .our_community h3{
     margin-bottom: 2rem;
 }
 .our_community__tabs {
-    width: 100%;
+    width: 90%;
+    margin: auto;
     border-radius: 13px;
     background: #FCFCFC;
   }
@@ -422,8 +426,9 @@ a{
   }
 
 .our_community__important{
-    width: 100%;
-    margin-top: 30rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 5rem;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
@@ -433,21 +438,68 @@ a{
     flex-direction: column;
   }
   .important__container *{
-    width: 30rem;
+    width: 33rem;
   }
   .image-block{
-    position: absolute;
-    bottom: 25rem;
+    position: relative;
     display: flex;
-    padding: 3rem 0 0 3rem;
+    padding: 3rem 0 0 6.5rem;
     border-radius: 13px;
     background-color: #B6EBF3;
   }
   .image-block img{
+    z-index: 2;
     margin-left: auto;
     border-bottom-right-radius: 13px;
   }
-  .text-block{
+  .image-block .promt{
+    z-index: 3;
+    width: 150px;
+    padding: 0 2rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+  }
+  .image-block .promt p{
+    width: 100%;
+    font-size: 10px !important;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .image-block .promt img{
+    width: 15px !important;
+    height: 35px;
+    margin-top: -10px;
+    margin-right: -20px;
+  }
+  .important__container:first-child .promt:first-child{
+    top: 165px;
+    left: 10px;
+  }
+  .important__container:first-child .promt:last-child{
+    right: 20px;
+    top: 275px;
+  }
+  .important__container:last-child .promt:first-child{
+    z-index: 1;
+    bottom: 45px;
+    left: 10px;
+  }
+  .important__container:last-child .promt:first-child img{
+    margin-right: 10px;
+  }
+  .important__container:last-child .promt:last-child{
+    right: 50px;
+    top: 20px;
+  }
+  .important__container:last-child .image-block img{
+    width: 27.5rem;
+  }
+  .important__container .text-block h3{
+    text-align: left;
     margin-top: 3rem;
   }
 
@@ -500,6 +552,7 @@ a{
     padding-bottom: 10rem;
 }
 .top-block{
+    width: 60%;
     position: relative;
     top: -8rem;
     margin: auto;
@@ -541,9 +594,12 @@ a{
 .promotion__map img{
     width: 100%;
 }
+.promotion__map{
+    width: 70%;
+}
 .promotion__count{
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -638,7 +694,7 @@ a{
 }
 .training__stage .stage__pre img{
     position: relative;
-    width: 35vw;    
+    width: 30vw;    
 }
 .training__stage--second, .training__stage--fourth, .training__stage--sixth{
     flex-direction: row-reverse;
@@ -705,6 +761,7 @@ a{
 .price h2{
     position: relative;
     z-index: 3;
+    font-size: 2.5rem;
     color: #FFFFFF;
     text-align: center;
     margin-bottom: 7rem;
@@ -728,7 +785,7 @@ a{
     margin: 0 5rem;
 }
 .option{
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -744,12 +801,15 @@ a{
     margin: 0 5rem;
 }
 .option h2{
-    padding: 3vw;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
     background: #FFFFFF;
     border-radius: 18px;
+    font-size: 2rem;
+    font-weight: 800;
     color: #17181A;
     text-align: left;
 }
@@ -766,19 +826,23 @@ a{
     line-height: 160%;
 }
 .option ul{
-    padding: 3vw;
+    padding: 2rem 3rem;
+    padding-top: 1rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.77);
 }
+.option ul li{
+    margin-top: .5rem;
+}
 .price--additional .option ul{
-    width: 15vw;
+    width: 17.8rem;
+    height: 15rem;
     color: #17181A;
     font-weight: 400;
 }
 .option .btn{
-    width: 10vw;
     align-self: flex-end;
-    margin-right: 1rem;
+    margin-right: 2rem;
     padding: 0.5rem 2rem;
     background: #FFFFFF;
 }
@@ -861,7 +925,7 @@ a{
     padding: 0.5rem 3rem;
 }
 .request__top-block{
-    width: 50%;
+    width: 55rem;
 }
 .request__top-block .top-block__logo::before{
     background-image: url(../img/bag.svg);
@@ -870,7 +934,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60vw;
+    width: 60rem;
 }
 .request__form{
     margin-top: 10rem;
@@ -880,6 +944,7 @@ a{
 }
 .form__head{
     width: 100%;
+    gap: 1rem;
     text-align: center;
     color: #FFFFFF;
 }
@@ -927,7 +992,6 @@ a{
 
 .dreams{
     position: relative;
-    min-height: 90vh;
     overflow: hidden;
     z-index: 2;
     padding: 5rem;
@@ -935,6 +999,7 @@ a{
 }
 .dreams .container{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -959,6 +1024,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 2.5rem;
     color: #17181A;
 }
 .dreams img{
@@ -1002,6 +1068,9 @@ footer{
 }
 .first__description{
     margin: 2rem 0;
+    margin: 1.5rem 0;
+    width: 20rem;
+    line-height: 1.8rem;
 }
 .first .btn{
     padding: 0.5rem 2rem;
@@ -1027,6 +1096,7 @@ footer .menu__list{
 }
 footer .list__item{
     margin-top: 0.8rem;
+    font-weight: 200;
 }
 footer .list__header{
     font-size: 1.5rem;

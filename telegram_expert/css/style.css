@@ -204,6 +204,9 @@ a{
         font-size: 1.1rem;
         font-weight: 500;
     }
+    .header .header__btns .btn{
+        width: auto;
+    }
 }
 
 @media (max-width: 767px){
@@ -288,9 +291,13 @@ a{
     .hello_block{
         padding: 1rem 0;
     }
+    .hello_block h1{
+        margin-top: 10rem;
+    }
     .hello_block__btns{
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
     }
 }
 
@@ -598,7 +605,7 @@ a{
     width: 70%;
 }
 .promotion__count{
-    width: 100%;
+    width: 90%;
     margin-top: 5rem;
     display: flex;
     flex-wrap: wrap;
@@ -606,7 +613,6 @@ a{
 }
 .count__container{
     flex: 0 0 calc(33% - 2rem);
-    margin-left: 2rem;
     margin-top: 2rem;
     padding: 2rem 0;   
     text-align: center; 
@@ -901,7 +907,7 @@ a{
         font-size: 1.5rem;
     }
     .option h2, .option ul{
-        padding: 2rem 3rem;
+        padding: 2rem;
     }
 }
 
@@ -978,6 +984,7 @@ a{
 }
 @media (max-width: 1024px){
     .request__form{
+        width: 60vw;
         margin-top: 5rem;
     }
     .form__group, .form__group input{

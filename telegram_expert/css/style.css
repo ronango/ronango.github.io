@@ -229,8 +229,17 @@ a{
 }
 
 @media (max-width: 767px){
-
-}
+    .header__btns{
+        gap: .5rem;
+    }
+    .header .header__btns .btn{
+        width: 85px;
+        font-size: 0.65rem;
+    }
+    .our_community .our_community__app .btn{
+        padding: 10px 7px !important;
+    }
+}   
 
 /*
 * Hello block

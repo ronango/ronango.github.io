@@ -144,3 +144,14 @@
     }
 
 }
+@keyframes btnBgAnimation {
+    0% {
+        background-position: 0% 31%;
+    }
+    50% {
+        background-position: 100% 70%;
+    }
+    100% {
+        background-position: 0% 31%;
+    }
+}

@@ -100,29 +100,48 @@ a{
 .btn{
     padding: 15px 20px;
 
-    color: #19D3D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0D131F;
     font-family: 'Gilroy', sans-serif;
     font-size: 1em;
     font-weight: 800;
-    text-align: center;
 
+    background: linear-gradient(90deg,#19D3D9 0%,#8efbff 50%,#00f7ff 51%,#00f7ff 71%,#19D3D9 100%);
+    background-size: 400%;
+    border-radius: 12px;
+
+    animation: btnBgAnimation 3s ease infinite;
+}
+.btn--nobg{
+    color: #19D3D9;
+    
+    background: transparent;
     border: 3px solid #19D3D9;
     border-radius: 12px;
+
+    transition: all .4s;
 }
-.btn--bg{
+.btn--nobg:hover{
     color: #0D131F;
-    background: #19D3D9;
-    border-color: transparent;
-    border-radius: 12px;
+    background-color: #19D3D9;
 }
 .btn--training{
     padding: 15px 40px;
+    display: initial;
     color: #0D131F;
     font-weight: 600;
     background: #B6EBF3;
     box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
     border-color: transparent;
     border-radius: 11px;
+
+    transition: all .4s;
+}
+.btn--training:hover{
+    box-shadow: none;
 }
 
 /*
@@ -337,9 +356,12 @@ a{
 }
 .our_community .our_community__app .btn{
     padding: 10px 50px;
-    background: #3ED09B;
+    background: linear-gradient(90deg,#3ED09B 0%,#a8ffdf 50%,#52ffc0 51%,#3ED09B 71%,#3ED09B 100%);
+    background-size: 800%;
     border-radius: 11px;
     color: #FFFFFF;
+
+    animation: btnBgAnimation 4s ease infinite;
 }
 .our_community h3{
     margin-bottom: 2rem;
@@ -853,7 +875,8 @@ a{
     background: #FFFFFF;
 }
 .option--demo .btn{
-    background: linear-gradient(93.94deg, #25E4F7 5.13%, #01FDFA 97.07%);
+    background: linear-gradient(90deg,#19D3D9 0%,#8efbff 50%,#00f7ff 51%,#00f7ff 71%,#19D3D9 100%);
+    background-size: 400%;
 }
 .price--additional .option .btn{
     background: #B6EBF3;
@@ -928,7 +951,7 @@ a{
 }
 .request .btn{
     margin-top: -5rem;
-    padding: 0.5rem 3rem;
+    padding: 0.8rem 5rem;
 }
 .request__top-block{
     width: 55rem;
@@ -975,6 +998,12 @@ a{
     border-color: #FFFFFF;
     color: #FFFFFF;
     cursor: pointer;
+
+    transition: all .4s;
+}
+.request__form .btn:hover{
+    color: #17181a;
+    background-color: #FFFFFF;
 }
 
 @media (max-width: 1350px){

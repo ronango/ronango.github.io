@@ -1,5 +1,5 @@
-@import url('https://fonts.cdnfonts.com/css/montserrat');
-@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+@import url('../fonts/montserrat/montserrat.css');
+@import url('../fonts/gilroy/stylesheet.css');
 @import './animations.css';
 
 

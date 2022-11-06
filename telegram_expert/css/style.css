@@ -228,6 +228,11 @@ a{
     .header__btns{
         gap: .5rem;
     }
+    .header__btns .btn {
+        width: 85px;
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
     .our_community .our_community__app .btn{
         padding: 10px 7px !important;
     }
@@ -260,7 +265,7 @@ a{
     max-width: 58rem;
     margin: 0 auto;
     margin-top: 8rem;
-    font-size: 5.2rem;
+    font-size: 5rem;
     z-index: 2;
 }
 .hello_block p{
@@ -293,7 +298,7 @@ a{
 
 @media (max-width: 900px){
     .hello_block h1{
-        font-size: 4.2rem;
+        font-size: 4rem;
     }
     .hello_block p{
         font-size: 1.2rem !important;
@@ -313,7 +318,7 @@ a{
         margin: 2rem 0;
     }
     .hello_block h1{
-        font-size: 3.4rem;
+        font-size: 3.2rem;
     }
 }
 
@@ -330,7 +335,7 @@ a{
         gap: 2rem;
     }
     .hello_block h1{
-        font-size: 2.9rem;
+        font-size: 2.7rem;
     }
 }
 
@@ -366,7 +371,7 @@ a{
     opacity: 1;
 }
 .our_community .our_community__app img {
-    width: 90%;
+    width: 75%;
 }
 .our_community .our_community__app .btn{
     padding: 10px 50px;
@@ -481,7 +486,7 @@ a{
     flex-direction: column;
   }
   .important__container *{
-    width: 33rem;
+    width: 33vw;
   }
   .image-block{
     position: relative;
@@ -539,7 +544,11 @@ a{
     top: 20px;
   }
   .important__container:last-child .image-block img{
-    width: 27.5rem;
+    width: 27vw;
+  }
+  .important__container .text-block{
+    padding-left: 3rem;
+    line-height: 1.7;
   }
   .important__container .text-block h3{
     text-align: left;
@@ -564,6 +573,10 @@ a{
     .image-block{
         display: none;
     }
+}
+
+@media (max-width: 1024px){
+    
 }
 
 @media (max-width: 480px){
@@ -633,6 +646,7 @@ a{
 }
 .top-block__text p{
     margin-top: 1rem;
+    line-height: 1.7;
 }
 .promotion__map img{
     width: 100%;
@@ -780,6 +794,10 @@ a{
     overflow: hidden;
     z-index: 2;
     padding: 5rem;
+    display: flex;
+}
+.price .container{
+    gap: 5rem;
 }
 .price--additional{
     background-color: #FFFFFF;

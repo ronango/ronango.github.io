@@ -808,11 +808,11 @@ a{
     top: -15vw;
 }
 .price .circle--inner-top {
-    left: -25vw;
+    left: -20vw;
     top: -15vw;
 }
 .price .circle--bottom {
-    bottom: -5vw;
+    bottom: -10vw;
     right: -20vw;
 }
 .price h2{

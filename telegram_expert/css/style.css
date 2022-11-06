@@ -1,5 +1,6 @@
-@import url('../fonts/montserrat/montserrat.css');
+@import url('../fonts/montserrat/stylesheet.css');
 @import url('../fonts/gilroy/stylesheet.css');
+@import url('../fonts/SF_Pro_Display/stylesheet.css');
 @import './animations.css';
 
 
@@ -474,19 +475,18 @@ a{
   }
 
 .our_community__important{
-    width: 90%;
-    margin: auto;
     margin-top: 5rem;
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    gap: 5rem;
 }
   .important__container {
     display: flex;
     flex-direction: column;
   }
   .important__container *{
-    width: 33vw;
+    width: 33rem;
   }
   .image-block{
     position: relative;
@@ -544,7 +544,7 @@ a{
     top: 20px;
   }
   .important__container:last-child .image-block img{
-    width: 27vw;
+    width: 27rem;
   }
   .important__container .text-block{
     padding-left: 3rem;
@@ -646,7 +646,7 @@ a{
 }
 .top-block__text p{
     margin-top: 1rem;
-    line-height: 1.7;
+    line-height: 1.5;
 }
 .promotion__map img{
     width: 100%;
@@ -874,6 +874,8 @@ a{
     text-align: left;
 }
 .price--additional .option h2{
+    font-family: 'SF Pro Display';
+    font-weight: 700;
     background: #B6EBF3;
 }
 .option--demo h2{
@@ -885,6 +887,10 @@ a{
     width: 100%;
     line-height: 160%;
 }
+.price--additional .option h2 span{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+}
 .option ul{
     padding: 2rem 3rem;
     padding-top: 1rem;
@@ -893,10 +899,11 @@ a{
 }
 .option ul li{
     margin-top: .5rem;
+    line-height: 1.5;
 }
 .price--additional .option ul{
     width: 17.8rem;
-    height: 15rem;
+    height: 14rem;
     color: #17181A;
     font-weight: 400;
 }
@@ -1093,6 +1100,7 @@ a{
     flex-direction: column;
     align-items: flex-start;
     font-size: 2.5rem;
+    line-height: 1.5;
     color: #17181A;
 }
 .dreams img{
@@ -1153,7 +1161,7 @@ footer .by p{
 footer .menu{
     padding: 5rem 0;
     width: 30vw;
-    gap: 3rem;
+    gap: 8rem;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
@@ -1164,10 +1172,12 @@ footer .menu__list{
 }
 footer .list__item{
     margin-top: 0.8rem;
+    font-size: .8rem;
     font-weight: 200;
+    font-style: normal;
 }
 footer .list__header{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500 !important;
     color: #FFFFFF;
 }

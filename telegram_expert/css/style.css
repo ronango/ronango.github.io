@@ -1151,6 +1151,7 @@ footer{
 .first .btn{
     padding: 0.5rem 2rem;
     font-size: 0.7rem;
+    border-radius: 6px;
 }
 footer .by{
     align-self: flex-end;

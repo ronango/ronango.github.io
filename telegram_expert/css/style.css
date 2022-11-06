@@ -98,7 +98,7 @@ a{
 * Buttons
 */
 .btn{
-    padding: 15px 20px;
+    padding: 0.55em;
 
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@ a{
 
     color: #0D131F;
     font-family: 'Gilroy', sans-serif;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 800;
 
     background: linear-gradient(90deg,#19D3D9 0%,#8efbff 50%,#00f7ff 51%,#00f7ff 71%,#19D3D9 100%);
@@ -200,7 +200,6 @@ a{
 .header__btns .btn{
     width: 150px;
 
-    font-size: 0.7em;
     font-weight: 800;
 
     padding: 10px 10px;
@@ -223,18 +222,11 @@ a{
         font-size: 1.1rem;
         font-weight: 500;
     }
-    .header .header__btns .btn{
-        width: auto;
-    }
 }
 
 @media (max-width: 767px){
     .header__btns{
         gap: .5rem;
-    }
-    .header .header__btns .btn{
-        width: 85px;
-        font-size: 0.65rem;
     }
     .our_community .our_community__app .btn{
         padding: 10px 7px !important;
@@ -268,17 +260,18 @@ a{
     max-width: 58rem;
     margin: 0 auto;
     margin-top: 8rem;
-    font-size: 5rem;
+    font-size: 5.2rem;
     z-index: 2;
 }
 .hello_block p{
     font-size: 1.4rem !important;
     max-width: 31em;
+    line-height: 1.7;
     text-align: center;
     margin: 2rem 0;
 }
 .hello_block__btns{
-    min-width: 40rem;
+    min-width: 50rem;
     position: relative;
     z-index: 2;
     display: flex;
@@ -288,16 +281,25 @@ a{
 }
 .hello_block__btns .btn{
     width: 30%;
+    padding: 0.55em;
+    font-size: 1.2rem
 }
 
 @media (max-width: 1024px){
     .hello_block h1{
         width: auto;
-        font-size: 3rem;
     }
-    .hello_block .hello_block__btns .btn{
-        width: 20%;
-        font-size: 0.65rem;
+}
+
+@media (max-width: 900px){
+    .hello_block h1{
+        font-size: 4.2rem;
+    }
+    .hello_block p{
+        font-size: 1.2rem !important;
+    }
+    .hello_block__btns .btn{
+        font-size: 1rem;
     }
 }
 
@@ -305,13 +307,13 @@ a{
     .hello_block .bg .circle--top, .hello_block .bg .circle--inner-top{
         top: 10vw;
     }
-    .hello_block h1{
-        font-size: 2rem;
-    }
     .hello_block p {
         font-size: 0.8rem !important;
         max-width: 27em;
         margin: 2rem 0;
+    }
+    .hello_block h1{
+        font-size: 3.4rem;
     }
 }
 
@@ -326,6 +328,9 @@ a{
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+    }
+    .hello_block h1{
+        font-size: 2.9rem;
     }
 }
 

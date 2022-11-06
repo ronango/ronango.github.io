@@ -790,7 +790,7 @@ a{
 
 .price{
     position: relative;
-    min-height: 90vh;
+    min-height: 60vh;
     overflow: hidden;
     z-index: 2;
     padding: 5rem;

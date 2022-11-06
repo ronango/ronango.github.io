@@ -796,9 +796,6 @@ a{
     padding: 5rem;
     display: flex;
 }
-.price .container{
-    gap: 5rem;
-}
 .price--additional{
     background-color: #FFFFFF;
     padding-bottom: 15rem;

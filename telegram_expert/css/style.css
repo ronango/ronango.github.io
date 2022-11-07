@@ -112,7 +112,7 @@ a{
 
     background: linear-gradient(90deg,#19D3D9 0%,#8efbff 50%,#00f7ff 51%,#00f7ff 71%,#19D3D9 100%);
     background-size: 400%;
-    border-radius: 12px;
+    border-radius: 7px;
 
     animation: btnBgAnimation 3s ease infinite;
 }
@@ -121,7 +121,6 @@ a{
     
     background: transparent;
     border: 3px solid #19D3D9;
-    border-radius: 12px;
 
     transition: all .4s;
 }
@@ -172,7 +171,6 @@ a{
 }
 .header .header__logo p{
     margin-left: 1rem;
-    font-size: 0.8em !important;
     font-weight: 700;
 }
 .header__list{
@@ -190,6 +188,10 @@ a{
 .header__list .list__item{
     font-size: 0.8em;
     font-weight: 200;
+    transition: all .5s;
+}
+.header__list .list__item:hover{
+    text-shadow: 0 0 20px #FFFFFF;
 }
 .header__btns{
     grid-area: b;
@@ -199,11 +201,11 @@ a{
     justify-content: flex-end;
 }
 .header__btns .btn{
-    width: 130px;
-    padding: 5px 15px;
-
+    width: 120px;
+    padding: 5px 5px;
+    font-size: 0.8rem;
     font-weight: 800;
-    text-align: center ;
+    text-align: center;
 }
 
 @media (max-width: 1024px){
@@ -229,9 +231,9 @@ a{
         gap: .5rem;
     }
     .header__btns .btn {
-        width: 85px;
+        width: 75px;
         padding: 0.5em;
-        font-size: 0.8em;
+        font-size: 0.6em;
     }
     .our_community .our_community__app .btn{
         padding: 10px 7px !important;
@@ -245,7 +247,7 @@ a{
     position: relative;
     margin-top: -10rem;
     padding-top: 10vh;
-    padding-bottom: 12vw;
+    padding-bottom: 45vh;
 
     color: #FFFFFF;
 
@@ -266,6 +268,7 @@ a{
     margin: 0 auto;
     margin-top: 8rem;
     font-size: 5rem;
+    font-weight: 600;
     z-index: 2;
 }
 .hello_block p{
@@ -321,6 +324,12 @@ a{
     .hello_block h1{
         font-size: 3.2rem;
     }
+    
+    .hello_block__btns{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 480px){
@@ -329,11 +338,6 @@ a{
     }
     .hello_block h1{
         margin-top: 10rem;
-    }
-    .hello_block__btns{
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
     }
     .hello_block h1{
         font-size: 2.7rem;
@@ -366,7 +370,8 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -7vw;
+    margin-top: -10vh;
+    top: -20vh;
 }
 .our_community .our_community__app.app--active{
     opacity: 1;
@@ -378,7 +383,6 @@ a{
     padding: 10px 50px;
     background: linear-gradient(90deg,#3ED09B 0%,#a8ffdf 50%,#52ffc0 51%,#3ED09B 71%,#3ED09B 100%);
     background-size: 800%;
-    border-radius: 11px;
     color: #FFFFFF;
 
     animation: btnBgAnimation 4s ease infinite;
@@ -475,6 +479,7 @@ a{
   }
 
 .our_community__important{
+    height: 45rem;
     margin-top: 5rem;
     display: flex;
     align-items: baseline;
@@ -482,23 +487,29 @@ a{
     gap: 5rem;
 }
   .important__container {
+    width: 40rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
+    gap: 3rem;
   }
   .important__container *{
     width: 33rem;
   }
   .image-block{
     position: relative;
+    overflow: hidden;
     display: flex;
     padding: 3rem 0 0 6.5rem;
     border-radius: 13px;
     background-color: #B6EBF3;
   }
   .image-block img{
+    width: 1290px;
+    height: 707px;
     z-index: 2;
     margin-left: auto;
-    border-bottom-right-radius: 13px;
+    border-radius: 13px;
   }
   .image-block .promt{
     z-index: 3;
@@ -532,7 +543,7 @@ a{
     top: 275px;
   }
   .important__container:last-child .promt:first-child{
-    z-index: 1;
+    z-index: 3;
     bottom: 45px;
     left: 10px;
   }
@@ -542,9 +553,6 @@ a{
   .important__container:last-child .promt:last-child{
     right: 50px;
     top: 20px;
-  }
-  .important__container:last-child .image-block img{
-    width: 27rem;
   }
   .important__container .text-block{
     padding-left: 3rem;
@@ -560,12 +568,17 @@ a{
         width: 75%;
     }
     .our_community__important{
+        width: 65%;
+        height: auto;
         margin-top: 0;
         flex-direction: column;
-        width: 90%;
+        justify-content: center;
+        gap: 0;
     }
     .our_community__important .important__container{
         position: relative;
+        width: auto;
+        height: auto;
     }
     .important__container *{
         width: 100%;
@@ -573,11 +586,11 @@ a{
     .image-block{
         display: none;
     }
+    .important__container .text-block{
+        padding-left: 0;
+    }
 }
 
-@media (max-width: 1024px){
-    
-}
 
 @media (max-width: 480px){
     .our_community .our_community__app img {
@@ -588,9 +601,6 @@ a{
         top: 0;
         margin: 2rem 0;
         width: 75%;
-    }
-    .important__container{
-        display: none;
     }
 }
 
@@ -617,7 +627,7 @@ a{
     align-items: center;
     justify-content: space-evenly;
     background: #FFFFFF;
-    box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 25%);
+    box-shadow: 0px 0px 5px 3px rgb(0 0 0 / 15%);
     border-radius: 16px;
 }
 .top-block__logo{
@@ -757,13 +767,13 @@ a{
     line-height: 1.6;
 }
 .training__stage .stage__pre{
-    border-radius: 13px;
+    border-radius: 7px;
     background-color: #B6EBF3;
 }
 .training__stage .stage__pre img{
     position: relative;
     width: 30vw;    
-    border-radius: 16px;
+    border-radius: 7px;
 }
 .training__stage--second, .training__stage--fourth, .training__stage--sixth{
     flex-direction: row-reverse;
@@ -1197,11 +1207,15 @@ footer .menu__list{
     flex-direction: column;
     list-style: none;
 }
-footer .list__item{
+footer .menu__list .list__item{
     margin-top: 0.8rem;
     font-size: .8rem;
     font-weight: 200;
     font-style: normal;
+    transition: all .5s;
+}
+footer .menu__list .list__item:hover{
+    text-shadow: 0 0 20px #FFFFFF;
 }
 footer .list__header{
     font-size: 1.2rem;
@@ -1236,6 +1250,3 @@ footer .list__header{
         align-self: center;
     }
 }
-
-
-

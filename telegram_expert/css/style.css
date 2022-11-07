@@ -299,6 +299,7 @@ a{
 @media (max-width: 900px){
     .hello_block h1{
         font-size: 4rem;
+        padding: 0;
     }
     .hello_block p{
         font-size: 1.2rem !important;

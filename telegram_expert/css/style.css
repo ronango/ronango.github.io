@@ -950,7 +950,8 @@ a{
         padding-bottom: 12rem;
     }
     .price h2{
-        margin-bottom: 15rem
+        margin-bottom: 15rem;
+        font-size: 2rem;
     }
     .price--additional h2{
         margin-bottom: 3rem;

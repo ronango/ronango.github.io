@@ -36,7 +36,6 @@ const observerFadeLeft = new IntersectionObserver(entries => {
     });
 });
 
-observerFadeLeft.observe(document.querySelector('.hello_block .container'))
 observerFadeLeft.observe(document.querySelector('.our_community h3'));
 observerFadeLeft.observe(document.querySelector('.our_community__tabs'));
 
@@ -52,8 +51,6 @@ const observerFadeTop = new IntersectionObserver(entries => {
         }
     });
 });
-
-observerFadeTop.observe(document.querySelector('.header'));
 
 /**
  * Incoming Image

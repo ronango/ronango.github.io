@@ -22,7 +22,6 @@ const observerFadeRight = new IntersectionObserver(entries => {
 
 observerFadeRight.observe(document.querySelector('.app img'));
 observerFadeRight.observe(document.querySelector('.app .btn'));
-observerFadeRight.observe(document.querySelector('.hello_block p'));
 
 
 /**
@@ -37,10 +36,9 @@ const observerFadeLeft = new IntersectionObserver(entries => {
     });
 });
 
+observerFadeLeft.observe(document.querySelector('.hello_block .container'))
 observerFadeLeft.observe(document.querySelector('.our_community h3'));
 observerFadeLeft.observe(document.querySelector('.our_community__tabs'));
-observerFadeLeft.observe(document.querySelector('.hello_block h1'));
-observerFadeLeft.observe(document.querySelector('.hello_block__btns'));
 
 
 /**

@@ -762,6 +762,7 @@ a{
 .training__stage .stage__pre img{
     position: relative;
     width: 30vw;    
+    border-radius: 16px;
 }
 .training__stage--second, .training__stage--fourth, .training__stage--sixth{
     flex-direction: row-reverse;

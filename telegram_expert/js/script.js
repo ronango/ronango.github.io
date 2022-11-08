@@ -119,8 +119,10 @@ const observerIncomingImage = new IntersectionObserver(entries => {
 
 });
 
-observerIncomingImage.observe(document.querySelector('.important__container .image-block--first'));
-observerIncomingImage.observe(document.querySelector('.important__container .image-block--second'));
+if (document.documentElement.clientWidth > 680){
+  observerIncomingImage.observe(document.querySelector('.important__container .image-block--first'));
+  observerIncomingImage.observe(document.querySelector('.important__container .image-block--second'));  
+}
 
 /**
  * 4) Translate image

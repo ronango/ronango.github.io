@@ -107,19 +107,7 @@ observerFadeLeft.observe(document.querySelector('.our_community__tabs'));
 
 
 /**
- * 3) Fade-top
- */
-
-const observerFadeTop = new IntersectionObserver(entries => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-top');
-        }
-    });
-});
-
-/**
- * Incoming Image
+ * 3) Incoming Image
  */
 
 const observerIncomingImage = new IntersectionObserver(entries => {
@@ -135,7 +123,7 @@ observerIncomingImage.observe(document.querySelector('.important__container .ima
 observerIncomingImage.observe(document.querySelector('.important__container .image-block--second'));
 
 /**
- * Translate image
+ * 4) Translate image
  */
 
  const observerTranslatingRightImage = new IntersectionObserver(entries => {
@@ -165,7 +153,7 @@ trainingImages.forEach((el, index) =>{
 
 
 /**
- * Particles
+ * 5) Particles
  */
 
  particlesJS('particles-js',

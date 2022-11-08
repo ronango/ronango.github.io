@@ -223,7 +223,8 @@ img{
 
 @media (max-width: 1024px){
     .header{
-        padding: 2rem 0.3rem;
+        height: auto;
+        padding: 1.2rem 0.3rem;
         position: relative
     }
     .header .menu__list{
@@ -237,8 +238,11 @@ img{
 @media (max-width: 890px){
     .header{
         height: auto;
-        padding: 2rem 1rem;
+        padding: 0.5rem 1rem;
         column-gap: 0;
+    }
+    .header__logo{
+        z-index: 12;
     }
     .header__burger{
         width: 30px;
@@ -278,7 +282,6 @@ img{
     .header__menu{
         position: fixed;
         z-index: 10;
-        opacity: 0;
         top: 0;
         left: 0;
         width: 100%;
@@ -286,22 +289,21 @@ img{
         padding: 15px;
         flex-direction: column;
         align-items: center;
-        background: #444444;
+        background: linear-gradient(90deg, #17181A 0.55%, #1B1C1F 100%);
         transform: translateY(-100%);
         transition: transform 0.5s; 
     }
     .header__menu.active {
-        opacity: 1;
         transform: translateY(0);
         width: 96%;
     }
     .menu__list{
         flex-direction: column;
         margin-top: 6rem;
-        align-items: center;
+        align-items: flex-start;
     }
     .menu__list .list__item {
-        font-size: 2rem;
+        font-size: 1rem;
         font-weight: 500;
     }
     .menu__btns{
@@ -314,7 +316,7 @@ img{
         width: 80%;
         margin: auto;
         padding: 0.5em;
-        font-size: 2em;
+        font-size: 1rem;
     }
     .our_community .our_community__app .btn{
         padding: 10px 7px !important;

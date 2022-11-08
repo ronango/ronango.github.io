@@ -370,6 +370,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
     margin-top: -10vh;
     top: -20vh;
 }
@@ -378,6 +379,7 @@ a{
 }
 .our_community .our_community__app img {
     width: 75%;
+    border-radius: 11px;
 }
 .our_community .our_community__app .btn{
     padding: 10px 50px;

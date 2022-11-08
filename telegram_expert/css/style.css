@@ -715,6 +715,9 @@ img{
         bottom: 25px;
         left: 10px;
     }
+    .important__container:last-child .promt:first-child img {
+        margin-right: -15px;
+    }
 }
 
 @media (max-width: 480px){

@@ -300,6 +300,10 @@ img{
         margin-top: 10rem;
         align-items: center;
     }
+    .menu__list .list__item {
+        font-size: 2rem;
+        font-weight: 500;
+    }
     .menu__btns{
         width: 100%;
         gap: .5rem;
@@ -310,7 +314,7 @@ img{
         width: 80%;
         margin: auto;
         padding: 0.5em;
-        font-size: 0.6em;
+        font-size: 3em;
     }
     .our_community .our_community__app .btn{
         padding: 10px 7px !important;

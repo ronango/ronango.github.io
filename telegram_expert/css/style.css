@@ -41,6 +41,13 @@ a{
 .text--bl{
     color: #19D3DB;
 }
+img.lazy{
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+img{
+    opacity: 1;
+}
 
 /*
 * Background

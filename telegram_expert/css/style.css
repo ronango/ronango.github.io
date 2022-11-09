@@ -666,7 +666,11 @@ img{
         padding-left: 1rem;
     }
 }
-
+@media (max-width: 1200px){
+    .our_community .our_community__app{
+        display: none;
+    }
+}
 @media (max-width: 680px){
     .our_community__important{
         height: 60rem;
@@ -730,9 +734,6 @@ img{
 }
 
 @media (max-width: 480px){
-    .our_community .our_community__app img,  .our_community .our_community__app .btn{
-        display: none;
-    }
     .our_community .our_community__app{
         opacity: 1;
         top: 0;

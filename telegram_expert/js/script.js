@@ -145,13 +145,15 @@ const observerTranslatingLeftImage = new IntersectionObserver(entries => {
 
 });
 
-trainingImages.forEach((el, index) =>{
+if (document.documentElement.clientWidth > 767){
+  trainingImages.forEach((el, index) =>{
     if (index % 2 == 0) {
         observerTranslatingRightImage.observe(el);
     }else {
         observerTranslatingLeftImage.observe(el);
     }
-});
+  });
+}
 
 
 /**

@@ -667,6 +667,9 @@ img{
     }
 }
 @media (max-width: 1200px){
+    .our_community .container{
+        margin-top: 5rem;
+    }
     .our_community .our_community__app{
         display: none;
     }
@@ -946,11 +949,6 @@ img{
     .training__stage .stage__pre img{
         width: 35vw;
         height: 23vw;
-    }
-}
-@media (max-width: 1200px){
-    .training_block .container{
-        margin-top: 5rem;
     }
 }
 @media (max-width: 1080px){

@@ -974,10 +974,13 @@ img{
     }
     .training__stage{
         flex-direction: column !important;
-        gap: 5rem;
+        gap: 3rem;
     }
     .training__stage .stage__text{
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
+    }
+    .training__stage .stage__text p{
+        margin-bottom: 3rem;
     }
     .training__stage .stage__text, .training__stage .stage__pre img{
         width: 100%;

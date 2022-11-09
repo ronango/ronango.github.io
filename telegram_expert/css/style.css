@@ -776,6 +776,9 @@ img{
     .tabs__btn[data-index="2"]{
         border-radius: 0 0 0 13px;
     }
+    .tabs__btn[data-index="3"] {
+        border-radius: 0 0 13px 0;
+    }
 }
 
 @media (max-width: 480px){

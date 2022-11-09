@@ -879,8 +879,22 @@ img{
 */
 
 .training_block{
+    position: relative;
+    overflow: hidden;
     padding: 5rem;
     background-color: #FFFFFF;
+}
+.training_block__wrapper{
+    z-index: 10;
+}
+.training_block .bg::before{
+    display: none;
+}
+.circle--top, .circle--inner-top{
+    top:  15vw;
+}
+.circle--bottom{
+    bottom: 20vw;
 }
 .training_block h2{
     align-self: baseline;

@@ -885,6 +885,9 @@ img{
     padding: 5rem;
     background-color: #FFFFFF;
 }
+.training_block .container{
+    margin-top: 5rem;
+}
 .training_block__wrapper{
     z-index: 10;
 }

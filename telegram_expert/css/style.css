@@ -1370,6 +1370,7 @@ img{
 }
 .dreams img{
     width: 40vw;
+    height: 30vw;
 }
 
 @media (max-width: 1200px) {

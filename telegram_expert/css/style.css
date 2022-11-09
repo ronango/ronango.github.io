@@ -241,6 +241,13 @@ img{
         padding: 0.5rem 1rem;
         column-gap: 0;
     }
+    .header .bg-mobile{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 12;
+        background: linear-gradient(90deg, #17181A 0.55%, #1B1C1F 100%);
+    }
     .header__logo{
         z-index: 12;
     }
@@ -294,7 +301,6 @@ img{
     }
     .header__menu.active {
         top: 0;
-        width: 96%;
     }
     .menu__list{
         flex-direction: column;
@@ -659,7 +665,7 @@ img{
 @media (max-width: 1350px){
     .our_community__important{
         height: 90rem;
-        margin-top: 0;
+        margin-top: 3rem;
         flex-direction: column;
         justify-content: space-around;
         gap: 0;
@@ -677,6 +683,12 @@ img{
     }
     .our_community .our_community__app{
         display: none;
+    }
+    .important__container{
+        gap: 0;
+    }
+    .important__container .text-block h3{
+        margin: 1rem 0;
     }
 }
 @media (max-width: 680px){
@@ -975,19 +987,27 @@ img{
 
 @media (max-width: 767px){
     .training_block{
-        padding: 2rem;
+        padding: 5rem 2rem;
     }
     .training_block h2{
         width: 100%;
     }
     .training__stage{
         margin-top: 5rem;
+        gap: 3rem;
     }
     .training__stage .stage__text{
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
-    .training__stage .stage__pre{
-        display: none;
+    .training__stage .stage__text h3{
+        font-size: 21px !important;
+    }
+    .training__stage .stage__text p{
+        margin-bottom: 2rem;
+        font-size: 14px !important;
+    }
+    .training__stage .stage__pre img{
+        transform: translate(1rem, 1rem);
     }
 }
 
@@ -1126,6 +1146,20 @@ img{
     background: #B6EBF3;
 }
 
+@media (max-width: 1500px){
+    .price--additional .price__options{
+        width: 100%;
+        padding: 0;
+        flex-direction: column;
+    }
+    .price--additional .option ul{
+        width: auto;
+        height: auto;
+    }
+    .price--additional .price__options .option:nth-child(2){
+        margin: 2rem 0;
+    }
+}
 @media (max-width: 1024px){
     .price.price--additional{
         padding-bottom: 12rem;
@@ -1142,10 +1176,6 @@ img{
         padding: 0;
         flex-direction: column;
     }
-    .price--additional .option ul{
-        width: auto;
-        height: auto;
-    }
     .option h2{
         margin-bottom: auto;
     }
@@ -1154,9 +1184,6 @@ img{
     }
     .option.option--demo{
         margin: 10rem 2rem;
-    }
-    .price--additional .price__options .option:nth-child(2){
-        margin: 2rem 0;
     }
     .option--month{
         margin-top: -12rem;
@@ -1314,6 +1341,11 @@ img{
     width: 40vw;
 }
 
+@media (max-width: 1200px) {
+    .dreams h2{
+        font-size: 2.2rem;
+    }
+}
 @media (max-width: 800px){
     .dreams{
         display: none;
@@ -1397,18 +1429,6 @@ footer .list__header{
 
 @media (max-width: 1040px){
     footer{
-        justify-content: center;
-        padding-left: 1rem;
-    }
-    
-    footer .menu{
-        display: none;
-    }
-
-}
-
-@media (max-width: 767px){
-    footer{
         flex-direction: column;
         padding-left: 5rem;
     }
@@ -1422,4 +1442,9 @@ footer .list__header{
     footer .by{
         align-self: center;
     }
+    
+    footer .menu{
+        display: none;
+    }
+
 }

@@ -171,6 +171,9 @@ img{
 
     background: linear-gradient(90deg, #17181A 0.55%, #1B1C1F 100%);
 }
+.header .bg-mobile{
+    display: none;
+}
 .header .header__logo{
     display: flex;
     align-items: center;
@@ -242,6 +245,7 @@ img{
         column-gap: 0;
     }
     .header .bg-mobile{
+        display: block;
         height: 100%;
         width: 100%;
         position: absolute;

@@ -891,10 +891,10 @@ img{
 .training_block .bg::before{
     display: none;
 }
-.circle--top, .circle--inner-top{
+.training_block .circle--top, .training_block .circle--inner-top{
     top:  15vw;
 }
-.circle--bottom{
+.training_block .circle--bottom{
     bottom: 20vw;
 }
 .training_block h2{

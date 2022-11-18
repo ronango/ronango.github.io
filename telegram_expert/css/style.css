@@ -124,6 +124,9 @@ img{
 
     animation: btnBgAnimation 3s ease infinite;
 }
+.btn:hover{
+    background: #139599; 
+}
 .btn--nobg{
     color: #19D3D9;
     

@@ -20,17 +20,19 @@ body{
     width: 100%;
     bottom: 0;
     padding: 1em;
+    font-size: 2em;
     background-color: #303030;
     animation: backOpacity 1.5s ease-in;
+}
+.typed-items{
+    display: none;
 }
 .typed{
     width: fit-content;
     margin: auto;
-    font-size: 2em;
     color: #fff;
 }
 .typed-cursor{
-    font-size: 2em;
     color: #fff;
 }
 

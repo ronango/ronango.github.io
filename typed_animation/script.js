@@ -1,5 +1,10 @@
+const typed_strings = document.querySelector(".typed-items").innerHTML;
+
 var typed = new Typed('.typed', {
-    strings: ['', 'Выводим статус бренда на новый уровень', 'Повышаем узнаваемсоть компании на рынке', 'Поможем составить тз по вашим запросам'],
-    typeSpeed: 50,
-    loop: true
+    strings: typed_strings.split("\n "),
+    typeSpeed: 30,
+    backSpeed: 20,
+    backDelay: 500,
+    startDelay: 1000,
+    loop: true,
   });

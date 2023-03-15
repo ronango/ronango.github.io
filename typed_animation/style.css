@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family: 'Oswald';
+    background-color: #000;
+}
+.wrapper{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    margin: auto;
+}
+.inner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+    background-color: #303030;
+    animation: backOpacity 1.5s ease-in;
+}
+.typed{
+    width: fit-content;
+    margin: auto;
+    font-size: 2em;
+    color: #fff;
+}
+.typed-cursor{
+    font-size: 2em;
+    color: #fff;
+}
+
+@keyframes backOpacity {
+    0%{
+        opacity: 0;
+        background-color: #fff;
+    }
+    100%{
+        opacity: 1;
+        background-color: #303030;
+    }
+}

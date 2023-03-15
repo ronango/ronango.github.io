@@ -21,7 +21,7 @@ var two = new Two({
   type: Two.Types.canvas,
   fullscreen: true,
   autostart: true
-}).appendTo(document.body);
+}).appendTo(document.getElementById('flyTags'));
 
 var solver = Matter.Engine.create();
 solver.world.gravity.y = 1;
@@ -89,7 +89,7 @@ function resize() {
   // vector.y = - thickness / 2;
   // Matter.Body.setPosition(bounds.top.entity, vector);
 
-  vector.x = -thickness / 2;
+  vector.x = thickness / 2;
   vector.y = two.height / 2;
   Matter.Body.setPosition(bounds.left.entity, vector);
 
@@ -186,7 +186,7 @@ function addSlogan() {
     group.translation.y = oy;
     text.translation.y = 14;
 
-    var rectangle = new Two.Rectangle(0, 0, rect.width, rect.height);
+    var rectangle = new Two.RoundedRectangle(0, 0, rect.width, rect.height, rect.width * .08);
     // rectangle.fill = 'rgb(255, 50, 50)';
     rectangle.fill = "#fff";
     rectangle.stroke = "#000";

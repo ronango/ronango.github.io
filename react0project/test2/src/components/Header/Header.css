@@ -1,0 +1,12 @@
+.header .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+}
+.header .container .header__brand{
+    font-weight: 600;
+}
+.header .container .header__links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

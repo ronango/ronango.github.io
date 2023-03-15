@@ -1,0 +1,64 @@
+{
+    "links": [
+        "about",
+        "portfolio",
+        "reviews"
+    ],
+    "aboutText": {
+        "title": "My name is Samsonov Roman and I'am web-developer",
+        "linkPhoto": "#",
+        "description": "Bla-bla-bla"
+    },
+    "works": [
+        {
+            "id": "w-1",
+            "title": "Sth landing",
+            "description": "sth about work",
+            "link": "#"
+        },
+        {
+            "id": "w-2",
+            "title": "Sth landing",
+            "description": "sth about work",
+            "link": "#"
+        },
+        {
+            "id": "w-3",
+            "title": "Sth landing",
+            "description": "sth about work",
+            "link": "#"
+        },
+        {
+            "id": "w-4",
+            "title": "Sth landing",
+            "description": "sth about work",
+            "link": "#"
+        }
+    ],
+    "reviews": [
+        {
+            "id": "r-1",
+            "title": "who review",
+            "text": "Bla-bla-bla",
+            "link": "#"
+        },
+        {
+            "id": "r-2",
+            "title": "who review",
+            "text": "Bla-bla-bla",
+            "link": "#"
+        },
+        {
+            "id": "r-3",
+            "title": "who review",
+            "text": "Bla-bla-bla",
+            "link": "#"
+        },
+        {
+            "id": "r-4",
+            "title": "who review",
+            "text": "Bla-bla-bla",
+            "link": "#"
+        }
+    ]
+}

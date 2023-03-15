@@ -1,0 +1,8 @@
+{
+    "topBar": {
+        "brand": "SR",
+        "btnNew": "new entry",
+        "btnDelete": "delete all entry",
+        "btnTheme": "change theme"
+    }
+}

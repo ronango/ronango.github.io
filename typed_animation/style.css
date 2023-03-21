@@ -4,13 +4,15 @@
     padding: 0;
 }
 body{
-    height: 100vh;
+    width: 1000px;
+    height: 1000px;
     font-family: 'Oswald';
     background-color: #000;
+    overflow: hidden;
 }
 .wrapper{
     position: relative;
-    width: 50%;
+    width: 100%;
     height: 50%;
     margin: auto;
     margin: auto;
@@ -18,10 +20,9 @@ body{
 .inner{
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -40%;
     padding: 1em;
-    font-size: 2em;
-    background-color: #303030;
+    font-size: 4.8em;
     animation: backOpacity 1.5s ease-in;
 }
 .typed-items{
@@ -34,15 +35,4 @@ body{
 }
 .typed-cursor{
     color: #fff;
-}
-
-@keyframes backOpacity {
-    0%{
-        opacity: 0;
-        background-color: #fff;
-    }
-    100%{
-        opacity: 1;
-        background-color: #303030;
-    }
 }

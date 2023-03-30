@@ -4,8 +4,8 @@
     padding: 0;
 }
 body{
-    width: 1000px;
-    height: 1000px;
+    width: 100vw;
+    height: 100vh;
     font-family: 'Oswald';
     background-color: #000;
     overflow: hidden;
@@ -20,7 +20,7 @@ body{
 .inner{
     position: absolute;
     width: 100%;
-    bottom: -40%;
+    bottom: -25%;
     padding: 1em;
     font-size: 4.8em;
     animation: backOpacity 1.5s ease-in;
@@ -29,7 +29,6 @@ body{
     display: none;
 }
 .typed{
-    width: fit-content;
     margin: auto;
     color: #fff;
 }

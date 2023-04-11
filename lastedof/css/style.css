@@ -55,6 +55,7 @@ figure {
 
 .section.is--monitor {
   background: linear-gradient(360deg, #F2F4F9 1.66%, #E6F0F9 21.09%), #E6F0F9;
+  box-shadow: 0 0 10px 10px #e5eff8;
 }
 
 .section.is--about {

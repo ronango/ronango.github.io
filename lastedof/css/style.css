@@ -957,7 +957,7 @@ figure {
   }
 
   .footer_data{
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     justify-content: space-around;
     font-size: clamp(.7em, 2vw, 1.2em);

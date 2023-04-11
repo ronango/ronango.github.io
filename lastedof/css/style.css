@@ -69,6 +69,8 @@ figure {
 
 .section.is--contacts {
   position: relative;
+  height: fit-content;
+  min-height: 500px;
   background-image: url("../images/641bf4d80d9307ab713da30d_footer-bg3.webp");
   background-size: cover;
   background-repeat: no-repeat;

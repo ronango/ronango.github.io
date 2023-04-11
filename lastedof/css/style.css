@@ -69,8 +69,7 @@ figure {
 
 .section.is--contacts {
   position: relative;
-  height: fit-content;
-  min-height: 500px;
+  min-height: 600px;
   background-image: url("../images/641bf4d80d9307ab713da30d_footer-bg3.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -930,6 +929,7 @@ figure {
 
   .section.is--contacts {
     position: relative;
+    height: fit-content;
     background: linear-gradient(180deg, #fff 0%, #44B8C5 12.25%), #44B8C5;
     background-size: cover;
     background-repeat: no-repeat;

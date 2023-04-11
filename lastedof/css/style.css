@@ -971,6 +971,9 @@ figure {
     align-items: baseline;
     gap: 1em;
   }
+  .footer_map{
+    margin: auto;
+  }
 
   .footer_data a::before,
   .footer_data p::before{

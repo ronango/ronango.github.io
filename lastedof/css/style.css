@@ -833,10 +833,11 @@ figure {
 @media screen and (max-width: 991px) {
   .section.is--hero .container {
     position: relative;
-    top: 25%;
+    top: 35%;
   }
 
-  .hero {
+  .padding_horiz .hero {
+    padding-top: 0;
     flex-direction: column;
   }
 
@@ -1037,9 +1038,6 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
-  .section.is--hero .container{
-    top: 35%;
-  }
   .nav {
     grid-column-gap: 25px;
   }

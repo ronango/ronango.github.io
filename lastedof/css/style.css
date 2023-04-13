@@ -94,6 +94,11 @@ figure {
   padding-left: 12px;
 }
 
+.section.is--hero .container{
+  position: relative;
+  top: 25%;
+}
+
 .navbar {
   position: fixed;
   left: 0%;
@@ -121,6 +126,10 @@ figure {
 
 @media (max-width: 767px) {
 
+  section {
+    min-height: 500px;
+  }
+  
   .burger{
     width: 30px;
     height: 30px;

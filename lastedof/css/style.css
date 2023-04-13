@@ -94,11 +94,6 @@ figure {
   padding-left: 12px;
 }
 
-.section.is--hero .container{
-  position: relative;
-  top: 25%;
-}
-
 .navbar {
   position: fixed;
   left: 0%;
@@ -129,7 +124,11 @@ figure {
   section {
     min-height: 500px;
   }
-  
+
+  .padding_horiz .hero{
+    padding-top: 0;
+  }
+
   .burger{
     width: 30px;
     height: 30px;
@@ -832,6 +831,11 @@ figure {
 }
 
 @media screen and (max-width: 991px) {
+  .section.is--hero .container {
+    position: relative;
+    top: 25%;
+  }
+
   .hero {
     flex-direction: column;
   }
@@ -1033,6 +1037,9 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+  .section.is--hero .container{
+    top: 35%;
+  }
   .nav {
     grid-column-gap: 25px;
   }

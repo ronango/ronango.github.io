@@ -16,11 +16,6 @@
   overflow: hidden;
 }
 
-section{
-  height: 100vh;
-  min-height: 1000px;
-}
-
 h1 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -52,6 +47,8 @@ figure {
 }
 
 .section.is--hero {
+  height: 100vh;
+  min-height: 500px;
   background-image: url("../images/641b0d631794fb848cc54041_3d-geometric-abstract-background201.webp");
   background-position: 50% 50%;
   background-size: cover;

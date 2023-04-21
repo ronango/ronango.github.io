@@ -25,20 +25,20 @@
                     <div class="menu__mobile d-lg-none">
                         <nav>
                                <ul>
-                                <li>
-                                    <a href="#">О конгрессе</a>
+                                <li class="mob-link">
+                                    <a href="#about">О конгрессе</a>
                                 </li>
-                                <li>
+                                <li class="mob-link">
                                     <a href="#prog">Программа конгресса</a>
                                 </li>
-                                <li>
+                                <li class="mob-link">
                                     <a href="#sp">Спикеры</a>
                                 </li>
-                                <li>
-                                    <a href="#">Цены</a>
+                                <li class="mob-link">
+                                    <a href="#tarrifs">Цены</a>
                                 </li>
-                                <li>
-                                    <a href="#">Ответы на вопросы</a>
+                                <li class="mob-link">
+                                    <a href="#contact">Ответы на вопросы</a>
                                 </li>
                                </ul>
                         </nav>
@@ -49,15 +49,15 @@
                 <a href="#about" class="m-0 me-lg-2 p-2 nav-link">О конгрессе</a>
                 <a href="#prog" class="m-0 me-lg-2 p-2 nav-link">Программа конгресса</a>
                 <a href="#sp" class="m-0 me-lg-3 p-2 nav-link">Спикеры</a>
-                <a href="#" class="m-0 me-lg-3 p-2 nav-link">Цены</a>
-                <a href="#" class="m-0 me-lg-3 p-2 nav-link">Ответы на вопросы</a>
-                <a href="#" class="m-0 me-lg-3 p-2 nav-link">Контакты</a>
+                <a href="#tarrifs" class="m-0 me-lg-3 p-2 nav-link">Цены</a>
+                <a href="#contact" class="m-0 me-lg-3 p-2 nav-link">Ответы на вопросы</a>
+                <a href="#contact" class="m-0 me-lg-3 p-2 nav-link">Контакты</a>
             </div>
         </div>
-        <div class="container w-75 mt-3 mt-lg-5 pt-lg-2 d-flex flex-column text-white justify-content-between">
+        <div class="container w-lg-75 mt-3 mt-lg-5 pt-lg-2 d-flex flex-column text-white justify-content-between">
             <h1 class="mt-5 mt-lg-3">Евразийский конгресс</h1>
-            <p class="mt-2 mt-lg-3 w-50">От экстремальной хирургии до идеального эстетического и функционального протезирования</p>
-            <a class="w-25 mt-2 mt-lg-3 p-2 btn">Присоединиться</a>
+            <p class="mt-2 mt-lg-3 w-lg-50">От экстремальной хирургии до идеального эстетического и функционального протезирования</p>
+            <a class="w-lg-25 mt-2 mt-lg-3 p-2 btn">Присоединиться</a>
         </div>
     </div>
     <div class="about text-gray" id="about">
@@ -319,7 +319,7 @@
             </div>
         </div>
     </div>
-    <div class="tariffs text-gray pb-5 pt-5">
+    <div class="tariffs text-gray pb-5 pt-5" id="tariffs">
         <div class="container">
             <h2 class="text-center">Цены на наше мероприятие</h2>
         <div class="tariffs__options mt-lg-5">
@@ -403,12 +403,12 @@
     <div class="founders">
         <div class="container">
             <h2>Основатель 3D DENTAL DIGITAL ACADEMY</h2>
-            <div class="d-flex justyfy-content-between pt-5">
+            <div class="d-flex justyfy-content-between flex-wrap pt-5">
                 <picture class="position-relative">
                     <img class="rounded" src="./img/founder.jpg" alt="founder">
                     <h3 class="position-absolute color-main">Доктор Ахмет Ибрахимоглы</h3>
                 </picture>
-                <p class="align-self-center w-50 ms-auto rounded">
+                <p class="align-self-center w-lg-50 ms-auto rounded mt-5">
                     Доктор Ахмет Ибрахимоглы — основатель сети поликлиник <span class="color-main">Dijident</span> в Стамбуле и цифровой лаборатории <span class="color-main">Digital Laboratory</span> в Казахстане. Автор семинаров и мастер-классов по имплантологии. 
                     <br><br>Член совета директоров <span class="color-main">3d-cdds</span>, компании, использующей цифровые технологии для улучшения работы стоматологов и зубных техников, и являющейся дистрибьютором компании My Line.
                     <br><br>Доктор Ахмет Ибрахимоглы имеет многолетний опыт работы и постоянно совершенствует свои знания и навыки в Европе, Америке, Турции и России. 
@@ -427,21 +427,21 @@
             <p class="text-center mb-5">Оставьте заявку и наш менеджер ответит<br>Вам в течение 15 минут!</p>
             <form id="tg">
                 <div class="d-flex flex-column align-items-center">
-                    <div class="d-flex mb-3 justify-content-between">
+                    <div class="d-flex mb-3 justify-content-center flex-wrap">
                         <div class="d-flex flex-column">
                             <label for="name">Ваше имя</label>
                             <input type="text" name="name" id="name" class="form-control p-4" placeholder="Иван" required>
                             <label for="email">Ваша почта</label>
                             <input type="email" name="email" id="email" class="form-control p-4" pattern="" placeholder="example@gmail.com" required>
                         </div>
-                        <div class="d-flex flex-column ms-5">
+                        <div class="d-flex flex-column ms-lg-5">
                             <label for="tel">Ваш номер телефона</label>
                             <input type="tel" name="tel" id="tel" class="form-control p-4" pattern="8[0-9]{10}" placeholder="89000000000" required>
                             <label for="comment">Ваш комментарий</label>
                             <input type="text" name="comment" id="comment" class="form-control p-4" required>
                         </div>
                     </div>
-                    <button type="submit" id="" class="btn">ОТКРЫТЬ СТУДИЮ</button>
+                    <button type="submit" id="" class="btn">Оставить заявку</button>
                 </div>
             </form>
             <p class="text-center w-50 mt-4">3dddacademy@gmail.com</p>

@@ -1,13 +1,30 @@
 let menuBtn = document.querySelector('.heading .menu .menu__btn');
 let menu = document.querySelector('.heading .menu .menu__mobile');
+let linkArray = document.querySelectorAll('.mob-link');
+
 menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
-  menuBtn.classList.toggle('active');
-  document.querySelector('body').classList.toggle('menu-active')
+    menuBtn.classList.toggle('active');
+    document.querySelector('body').classList.toggle('menu-active')
 })
 
+if (window.innerWidth < 767){
+    linkArray.forEach(link => {
+        link.addEventListener('click', () => {
+            console.log('sdfsdf')
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            document.querySelector('body').classList.toggle('menu-active')
+        })
+    })
+}
+
+let colSlides;
+
+(window.innerHeight < 1000) ? colSlides = 1 : colSlides = 1;
+
 var swiper = new Swiper(".roadmap__swiper", {
-    slidesPerView: 4,
+    slidesPerView: colSlides,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

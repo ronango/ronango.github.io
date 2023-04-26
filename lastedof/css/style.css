@@ -949,10 +949,8 @@ figure {
   .section.is--contacts {
     position: relative;
     height: fit-content;
-    background: linear-gradient(180deg, #fff 0%, #44B8C5 12.25%), #44B8C5;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: 0px 0px 20px 20px #fbfefe;
   }
 
   .contacts_wrp {
@@ -1029,21 +1027,17 @@ figure {
     background-image: url(../images/address.svg);
   }
 
-  .monitot_header-txt.is--about.mobile{
+  .monitot_header-txt.is--about{
+    padding: 0;
     margin: 0;
+    text-align: center;
   }
 
   .row.is--about-btm{
     gap: 0;
+    flex-direction: column;
   }
 
-  .row.is--about-btm p{
-    text-align: right;
-  }
-
-  .about_img-btm{
-    width: 45vw;
-  }
 }
 
 @media screen and (max-width: 767px) {

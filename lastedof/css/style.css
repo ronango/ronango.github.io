@@ -360,8 +360,8 @@ figure {
 
 .monitor_tabs-link {
   display: flex;
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
   padding: 0px;
   justify-content: center;
   align-items: center;
@@ -370,8 +370,8 @@ figure {
   background-color: transparent;
   font-family: Dosis, sans-serif;
   color: #34006E;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 25px;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -677,9 +677,9 @@ figure {
   display: none;
 }
 
-.wm{
+.wm {
   width: 350px;
-  height: 350px;
+  height: 300px;
 }
 
 @media screen and (min-width: 1280px) {

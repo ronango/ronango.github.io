@@ -18821,7 +18821,7 @@ Webflow.define('scroll', module.exports = function ($) {
 
   function calculateScrollDuration($targetEl, start, end) {
     if (reducedMotionEnabled()) return 0;
-    var mult = 5; // Check for custom time multiplier on the body and the scroll target
+    var mult = 1; // Check for custom time multiplier on the body and the scroll target
 
     $body.add($targetEl).each(function (_, el) {
       var time = parseFloat(el.getAttribute('data-scroll-time'));

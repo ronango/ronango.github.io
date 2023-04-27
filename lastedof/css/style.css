@@ -1328,3 +1328,11 @@ figure {
 .swiper-slide h1,.swiper-slide p{
   color: #34006E;
 }
+
+@media (max-width: 767px){
+  .swiper-slide h1,
+  .swiper-slide p{
+    text-align: center;
+    margin: 0 auto;
+  }
+}

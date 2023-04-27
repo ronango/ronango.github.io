@@ -1316,11 +1316,6 @@ figure {
   align-items: flex-start;
   grid-row-gap: 30px;
 }
-
-.swiper-slide h1,.swiper-slide p{
-  color: #34006E;
-}
-
 @media (max-width: 767px){
   .swiper-slide h1,
   .swiper-slide p{
@@ -1328,3 +1323,7 @@ figure {
     margin: 0 auto;
   }
 }
+.swiper-slide h1,.swiper-slide p{
+  color: #34006E;
+}
+

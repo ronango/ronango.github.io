@@ -1,6 +1,6 @@
-<?php ini_set('display_errors', 'Off');
+<?php ini_set('display_errors', 'on');
 
-$email = 'lastedbusiness@gmail.com'; // адрес куда отправлять письмо, можно несколько через запятую
+$email = 'romaneli.rs@gmail.com'; // адрес куда отправлять письмо, можно несколько через запятую
 $subject = 'New message from website '.$_SERVER['HTTP_HOST']; // тема письма с указанием адреса сайта
 $message = 'Form info:'; // вводная часть письма
 $addreply = ''; // адрес куда отвечать (необязательно)
@@ -20,8 +20,8 @@ $charset = 'utf-8'; // кодировка письма
 $cc = ''; // копия письма
 $bcc = ''; // скрытая копия
 
-$client_email = ''; // поле откуда брать адрес клиента
-$client_message = ''; // текст письма, которое будет отправлено клиенту
+$client_email = 'Email'; // поле откуда брать адрес клиента
+$client_message = 'Message'; // текст письма, которое будет отправлено клиенту
 $client_file = ''; // вложение, которое будет отправлено клиенту
 
 $export_file = ''; // имя файла для экспорта в CSV

@@ -962,7 +962,8 @@ figure {
     background-color: transparent;
   }
   .footer_form{
-    width: 100%;
+    width: 406px;
+    max-width: 406px;
     padding: 15px 20px 20px;
     border-radius: 13px;
     background-color: #fff;

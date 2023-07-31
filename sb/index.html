@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <title>3ddda</title>
+</head>
+<body>
+    <div class="header-block">
+        <div class="container header w-75 p-0 p-4 pb-lg-4 d-flex flex-column flex-lg-row justify-content-between align-items-center text-white">
+            <div class="heading d-flex flex-column flex-lg-row align-items-center"> 
+                <div class="menu d-flex justify-content-between">
+                    <img src="./img/logo.svg" alt="3ddda">
+                    <div class="menu__btn d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu__mobile d-lg-none">
+                        <nav>
+                               <ul>
+                                <li class="mob-link">
+                                    <a href="#about">О конгрессе</a>
+                                </li>
+                                <li class="mob-link">
+                                    <a href="#prog">Программа конгресса</a>
+                                </li>
+                                <li class="mob-link">
+                                    <a href="#sp">Спикеры</a>
+                                </li>
+                                <li class="mob-link">
+                                    <a href="#tarrifs">Цены</a>
+                                </li>
+                                <li class="mob-link">
+                                    <a href="#contact">Ответы на вопросы</a>
+                                </li>
+                               </ul>
+                        </nav>
+                    </div>
+                </div>   
+            </div>
+            <div class="active-els d-none d-lg-flex flex-column flex-lg-row align-items-center">
+                <a href="#about" class="m-0 me-lg-2 p-2 nav-link">О конгрессе</a>
+                <a href="#prog" class="m-0 me-lg-2 p-2 nav-link">Программа конгресса</a>
+                <a href="#sp" class="m-0 me-lg-3 p-2 nav-link">Спикеры</a>
+                <a href="#tarrifs" class="m-0 me-lg-3 p-2 nav-link">Цены</a>
+                <a href="#contact" class="m-0 me-lg-3 p-2 nav-link">Ответы на вопросы</a>
+                <a href="#contact" class="m-0 me-lg-3 p-2 nav-link">Контакты</a>
+            </div>
+        </div>
+        <div class="container w-lg-75 mt-3 mt-lg-5 pt-lg-2 d-flex flex-column text-white justify-content-between">
+            <h1 class="mt-5 mt-lg-3">Евразийский конгресс</h1>
+            <p class="mt-2 mt-lg-3 w-lg-50">От экстремальной хирургии до идеального эстетического и функционального протезирования</p>
+            <a class="w-lg-25 mt-2 mt-lg-3 p-2 btn">Присоединиться</a>
+        </div>
+    </div>
+    <div class="about text-gray" id="about">
+        <div class="about__container d-flex flex-column flex-lg-row mt-3 pt-3 mt-lg-5 pt-lg-5">
+            <div class="d-flex flex-column ms-lg-5">
+                <h2 class="mb-5 color-main">Конференция</h2>
+                <p>Мы собрали лучших мировых специалистов в области хирургии и протезирования из Турции, Италии и России на одной сцене.
+                    Каждый спикер поделится своими инновационными и действенными технологиями и последними достижениями в стоматологии. 
+                    <span class="color-main">16 часов контента</span> от экспертов, которые развиваются в своих сферах деятельности <span class="color-main">более 15 лет</span>. Более <span class="color-main">300 участников</span> со всего мира. 
+                    Присоединяйтесь к конгрессу и совершенствуйте свое мастерство!
+                </p>
+            </div>
+        </div>
+        <div class="about__container d-flex flex-column flex-lg-row mt-3 pt-3 mt-lg-5 pt-lg-5">
+            <div class="d-flex flex-column ms-lg-5">
+                <h2 class="mb-5 color-main">Выставка</h2>
+                <p>Мы собрали лучших мировых специалистов в области хирургии и протезирования из Турции, Италии и России на одной сцене.
+                    Международная стоматологическая выставка Istanbul Dental Equipment and Supplies Exhibition (IDEX Istanbul).
+                    Организаторы обещают, что в этом году выставка станет ярче, интереснее и информативнее. 
+                    Посетителям будет представлено современное стоматологическое оборудование и материалы, 
+                    новейшие методы лечения и протезирования, а также информация о профилактике стоматологических заболеваний, 
+                    защите зубов и уходе за ними. 
+                    В рамках выставки будут организованы многочисленные семинары по практическим современным стоматологическим технологиям.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="roadmap text-gray p-5 pe-lg-0" id="sp">
+        <h2 class="w-25 mt-3 mb-5">Наши спикеры</h2>
+        <div class="roadmap__swiper swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Джампьеро Чиабаттони</h3>
+                            </div>
+                            <p class="pt-5">
+                                Д-р мед. наук,профессор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Алессандро Поцци</h3>
+                            </div>
+                            <p class="pt-5">
+                                Доктор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Максим Копылов</h3>
+                            </div>
+                            <p class="pt-5">
+                                Доктор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Алексей Решетников</h3>
+                            </div>
+                            <p class="pt-5">
+                                Профессор, доктор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Дорук Кочийгит</h3>
+                            </div>
+                            <ol class="pt-5">
+                                Профессор, доктор
+                            </ol>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Огуз Озан</h3>
+                            </div>
+                            <p class="pt-5">
+                                Профессор, доктор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-6.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Александр Игумнов</h3>
+                            </div>
+                            <p class="pt-5">
+                                Доктор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-7.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="swiper-slide__content d-flex flex-column align-items-center p-3 pt-0">
+                        <div class="d-flex flex-column w-100">
+                            <div class="stage position-relative">
+                                <h3 class="position-absolute">Роберт Кутявин</h3>
+                            </div>
+                            <p class="pt-5">
+                                Доктор
+                            </p>
+                        </div>
+                        <img class="lazy"  class="pt-5" src="./img/slider/slide-8.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="for-what text-gray" id="prog">
+        <div class="container">
+            <h2 class="text-center">Программа конгресса</h2>
+            <div class="d-flex flex-column flex-lg-row justify-content-between mt-5">
+                <h2 class="color-main">7 мая</h2>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Время</th>
+                        <th scope="col">Событие</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">09:30 - 10:00</th>
+                            <td>Регистрация</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10:00 - 12:00</th>
+                            <td>
+                                <h5> Д-р  Игумнов Александр, Д-р Копылов Максим</h3>
+                                <p class="color-main">Навигационная хирургия как отправная точка для протезирования в сложных случаях</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12:00 - 12:30</th>
+                            <td>Кофе-брейк</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12:30 - 13:30</th>
+                            <td>
+                                <h5>Проф. д-р Огуз Озан</h5>
+                                <p class="color-main">Концепция реабилитации с использованием имплантатов на всей дуге с опорой на протезы. От планирования до завершения.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13:30 - 14:30</th>
+                            <td>Обед</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14:30 - 16:00</th>
+                            <td>
+                                <h5>Проф. д-р Решетников Алексей,<br>Д-р Кутявин Роберт</h5>
+                                <p class="color-main">Экстремальная атрофия кости челюстей , как показание для реабилитации с применением наклонных имплантатов.<br>«All- on-4 » , когда возвращает уверенность пациентам, а когда становится проблемой?! Хирургические решения « За» и « Против» . Протокол клиники « РеСто»</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16:00 - 16:30</th>
+                            <td>Кофе-брейк</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16:30 - 18:00</th>
+                            <td>
+                                <h5>Проф. д-р Решетников Алексей,<br>Д-р Кутявин Роберт</h5>
+                                <p class="color-main">Экстремальная атрофия кости челюстей , как показание для реабилитации с применением наклонных имплантатов.<br>«All- on-4 » , когда возвращает уверенность пациентам, а когда становится проблемой?! Хирургические решения « За» и « Против» . Протокол клиники « РеСто»</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="table">
+                    <h2 class="color-main">8 мая</h2>
+                    <thead>
+                    <tr>
+                        <th scope="col">Время</th>
+                        <th scope="col">Событие</th>
+                    </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">09:30 - 10:00</th>
+                            <td>Открытие</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10:00 - 12:00</th>
+                            <td>
+                                <h5> Д-р  Игумнов Александр, Д-р Копылов Максим</h3>
+                                <p class="color-main">- Планирование сложного стоматологического лечения</p>
+                                <p class="color-main">- Цифровая стоматология, как основа прогнозируемого лечения</p>
+                                <p class="color-main">- Протоколы работы с мягкими тканями в области зубов и имплантатов</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12:00 - 12:30</th>
+                            <td>Кофе-брейк</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12:30 - 13:30</th>
+                            <td>
+                                <h5>Д-р  Игумнов Александр, Д-р Копылов Максим</h3>
+                                <p class="color-main">- Имплантация как этап ортопедического лечения</p>
+                                <p class="color-main">- Пародонтология в практике хирурга и ортопеда</p>
+                                <p class="color-main">- Различные варианты тотальных реабилитаций с использованием имплантатов</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13:30 - 14:30</th>
+                            <td>Обед</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14:30 - 16:00</th>
+                            <td>
+                                <h5>Проф. д-р Дорук Кочийгит</h5>
+                                <p class="color-main">Решение проблем скуловой имплантации, зачем, когда и как?</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16:00 - 16:30</th>
+                            <td>
+                                <h5>Кофе-брейк</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16:30 - 18:00</th>
+                            <td>
+                                <h5>Д-р Алессандро Поцци</h5>
+                                <p class="color-main">Использование методов навигационной хирургии при полной адентии на примере имплантатов и ортопедических компонентов с поверхностью TiUltra/Xeal</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="tariffs text-gray pb-5 pt-5" id="tariffs">
+        <div class="container">
+            <h2 class="text-center">Цены на наше мероприятие</h2>
+        <div class="tariffs__options mt-lg-5">
+            <div class="option">
+                <h5>Тариф<br>«Базовый»</h5>
+                <ul class="option__list">
+                    <li>16 академических часов</li>
+                    <li>Кофе-брейк</li>
+                    <li>Обед</li>
+                    <li>Сертификат об участии</li>
+                    <li>Фото/видеоотчет</li>
+                    <li>Фото/видеоотчет</li>
+                    <li>Нетворкинг с участниками</li>
+                </ul>
+                <div class="option__price">
+                    <p>ЦЕНА:</p>
+                    <h2>$500</h2>
+                    <p>Не включает в себя стоимость  перелета и проживания. Цена до 1 апреля со скидкой составляет 500 USD</p>
+                </div>
+                <div class="position-relative">
+                    <a class="position-absolute mt-3 ps-4 pe-4 btn">Забронировать</a>
+                </div>
+            </div>
+            <div class="option">
+                <h5>Тариф<br>«Оптимум»</h5>
+                <ul class="option__list">
+                    <li>Проживание на 2 дня в двухместном номере</li>
+                    <li>16 академических часов</li>
+                    <li>Кофе-брейк</li>
+                    <li>Обед</li>
+                    <li>Сертификат об участии</li>
+                    <li>Фото/видеоотчет</li>
+                    <li>Нетворкинг с участниками</li>
+                    <li>Фото/видеоотчет</li>    
+                </ul>
+                <div class="option__price">
+                    <p>ЦЕНА:</p>
+                    <h2>$800</h2>
+                    <p>Роялти 10% со 2-го месяца продаж</p>
+                </div>
+                <div class="position-relative">
+                    <a class="position-absolute mt-3 ps-4 pe-4 btn">Забронировать</a>
+                </div>
+            </div>
+            <div class="option">
+                <h5>Тариф<br>«Все включено»</h5>
+                <ul class="option__list">
+                    <li>Перелёт</li>
+                    <li>Встреча в аэропорту</li>
+                    <li>Проживание в отеле</li>
+                    <li>Участие в конгрессе</li>
+                </ul>
+                <div class="option__price">
+                    <p>ЦЕНА:</p>
+                    <h2>$$$</h2>
+                    <p>Для расчета стоимости данного пакета нам необходима информация:<br>
+                        — о городе вылета<br>
+                        — о количестве человек, которые прилетят с Вами<br>
+                        — о количестве дней проживания в отеле, которое Вы предусматриваете  (пакет может включать 5, 7 или 14 ночей).<br>
+                    </p>
+                </div>
+                <div class="position-relative">
+                    <a class="position-absolute mt-3 ps-4 pe-4 btn">Узнать цену</a>
+                </div>
+            </div>
+            <div class="option">
+                <h5>Тариф<br>«Корпоротивный»</h5>
+                <div class="option__price">
+                    <p>ЦЕНА:</p>
+                    <h2>$$$</h2>
+                    <p>Может включать тарифы «Оптимум» и «Все включено», но со скидкой 5% на участие в конгрессе,  в случае, если участников больше 4-х человек.</p>
+                </div>
+                <div class="position-relative">
+                    <a class="position-absolute mt-3 ps-4 pe-4 btn">Узнать цену</a>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <div class="founders">
+        <div class="container">
+            <h2>Основатель 3D DENTAL DIGITAL ACADEMY</h2>
+            <div class="d-flex justyfy-content-between flex-wrap pt-5">
+                <picture class="position-relative">
+                    <img class="rounded" src="./img/founder.jpg" alt="founder">
+                    <h3 class="position-absolute color-main">Доктор Ахмет Ибрахимоглы</h3>
+                </picture>
+                <p class="align-self-center w-lg-50 ms-auto rounded mt-5">
+                    Доктор Ахмет Ибрахимоглы — основатель сети поликлиник <span class="color-main">Dijident</span> в Стамбуле и цифровой лаборатории <span class="color-main">Digital Laboratory</span> в Казахстане. Автор семинаров и мастер-классов по имплантологии. 
+                    <br><br>Член совета директоров <span class="color-main">3d-cdds</span>, компании, использующей цифровые технологии для улучшения работы стоматологов и зубных техников, и являющейся дистрибьютором компании My Line.
+                    <br><br>Доктор Ахмет Ибрахимоглы имеет многолетний опыт работы и постоянно совершенствует свои знания и навыки в Европе, Америке, Турции и России. 
+                    <br><br>Его клиника в Стамбуле занимается исследованиями и консалтингом по всему миру. 
+                    <br><br>3DDDA обеспечивает простые, последовательные и недорогие алгоритмы для перехода от аналоговой стоматологии к цифровой. Программа академии включает в себя курсы от ведущих экспертов, семинары, вебинары, мастер-классы и ежегодные стоматологические конгрессы. 
+                    <br><br>Цифровая академия <span class="color-main">3D Dental Digital Academy</span> успешно организовала и провела Евразийский конгресс по эстетической стоматологии в 2022 году.
+                    <br><br>В 2023 году Вас ждут более насыщенная программа мероприятий, лучшие специалисты в области хирургии и протезирования, новые знакомства и ценный опыт! 
+                    <br><br>Используйте инновационные технологии  и последние достижения науки в своей повседневной практике с <span class="color-main">3D Dental Digital Academy</span>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="feedback text-white" id="contact">
+        <div class="container pt-5 pb-5 d-flex flex-column align-items-center">
+            <h2 class="text-center mb-5">У Вас остались вопросы?</h2>
+            <p class="text-center mb-5">Оставьте заявку и наш менеджер ответит<br>Вам в течение 15 минут!</p>
+            <form id="tg">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-flex mb-3 justify-content-center flex-wrap">
+                        <div class="d-flex flex-column">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" name="name" id="name" class="form-control p-4" placeholder="Иван" required>
+                            <label for="email">Ваша почта</label>
+                            <input type="email" name="email" id="email" class="form-control p-4" pattern="" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="d-flex flex-column ms-lg-5">
+                            <label for="tel">Ваш номер телефона</label>
+                            <input type="tel" name="tel" id="tel" class="form-control p-4" pattern="8[0-9]{10}" placeholder="89000000000" required>
+                            <label for="comment">Ваш комментарий</label>
+                            <input type="text" name="comment" id="comment" class="form-control p-4" required>
+                        </div>
+                    </div>
+                    <button type="submit" id="" class="btn">Оставить заявку</button>
+                </div>
+            </form>
+            <p class="text-center w-50 mt-4">3dddacademy@gmail.com</p>
+            <p class="text-center w-50 mt-1">Отель Limak Atlantis Deluxe Hotel & Resort 5* в городе Анталия</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container header w-75 p-0 pt-4 pb-4 d-flex d-flex flex-column flex-lg-row justify-content-between align-items-center text-gray">
+                <div class="heading d-flex flex-column flex-lg-row align-items-center">    
+                    <h4 class="m-0 mb-1 mb-lg-0 me-lg-4 pe-lg-4 border-end border-gray color-main">3DDDA</h4>
+                    <p class="m-auto ps-2 ps-lg-0">Евразийский конгресс<br>3D DENTAL DIGITAL ACADEMY</p>
+                </div>
+                <div class="active-els d-none d-lg-flex flex-column flex-lg-row align-items-center">
+                    <a href="#" class="m-0 me-lg-2 rounded-circle">
+                        <img class="lazy"  class="d-none d-lg-block" src="./img/inst.jpg" alt="">
+                    </a>
+                    <a href="#" class="m-0 me-lg-2 rounded-circle">
+                        <img class="lazy"  class="d-none d-lg-block" src="./img/tg.jpg" alt="">
+                    </a>
+                    <a href="#" class="m-0 me-lg-3 rounded-circle">
+                        <img class="lazy"  class="d-none d-lg-block" class="wt" src="./img/wh.jpg" alt="">
+                    </a>
+                    <h4 class="m-0">+90 552 645 54 34</h4>
+                </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>

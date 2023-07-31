@@ -333,34 +333,6 @@ a {
 	}
 }
 
-@media screen and (max-width: 500px) {
-	.startscreen {
-        height: 675px;
-		padding: 0px 40px;
-	}
-
-    .startscreen header {
-        margin-bottom: 30px;
-    }
-
-    .maincontent .online,
-    .maincontent .offline {
-        margin-bottom: 20px;
-    }
-
-    .maincontent .dateline {
-        margin-bottom: 0;
-    }
-
-    .maincontent .calendar-container {
-        margin-bottom: 50px;
-    }
-
-    .maincontent > h4 {
-        margin-bottom: 40px;
-    }
-}
-
 .maincontent {
 	overflow: hidden;
 	padding: 0px 120px 230px 120px;
@@ -507,6 +479,34 @@ a {
 
 .maincontent .dateline .right .arright img {
 	width: 38px;
+}
+
+@media screen and (max-width: 500px) {
+	.startscreen {
+        height: 675px;
+		padding: 0px 40px;
+	}
+
+    .startscreen header {
+        margin-bottom: 30px;
+    }
+
+    .maincontent .online,
+    .maincontent .offline {
+        margin-bottom: 20px;
+    }
+
+    .maincontent .dateline {
+        margin-bottom: 0;
+    }
+
+    .maincontent .calendar-container {
+        margin-bottom: 50px;
+    }
+
+    .maincontent > h4 {
+        margin-bottom: 40px;
+    }
 }
 
 footer {

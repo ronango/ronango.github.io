@@ -346,7 +346,7 @@ a {
 
 @media screen and (max-width: 600px) {
 	.maincontent {
-		padding: 0px 20px 80px 20px;
+		padding: 0px 40px 80px 40px;
 	}
 }
 
@@ -360,6 +360,33 @@ a {
 	width: 155px;
 	cursor: pointer;
 	margin-bottom: 100px;
+}
+
+.startscreen .online,
+.startscreen .offline {
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.startscreen .offline {
+    left: 150px;
+}
+
+@media screen and (max-width: 500px) {
+    .maincontent .online,
+    .maincontent .offline {
+        display: none;
+    }
+
+    .startscreen {
+        position: relative;
+    }
+
+    .startscreen .online,
+    .startscreen .offline {
+        display: block;
+    }
 }
 
 .maincontent #offline2 {
@@ -579,7 +606,7 @@ footer .right h5 {
 	background: red;
 }
 
-.maincontent .cards .card > h2 {
+.maincontent .cards .card h2 {
 	color: #FFF;
 	font-size: 25.365px;
 	font-style: normal;
@@ -587,7 +614,7 @@ footer .right h5 {
 	line-height: normal;
 }
 
-.maincontent .cards .card > h3 {
+.maincontent .cards .card h3 {
 	color: #FFF;
 	font-size: 20px;
 	font-style: normal;
@@ -595,7 +622,7 @@ footer .right h5 {
 	line-height: normal;
 }
 
-.maincontent .cards .card > h4 {
+.maincontent .cards .card h4 {
 	color: #FFF;
 	font-size: 20px;
 	font-style: normal;
@@ -603,7 +630,7 @@ footer .right h5 {
 	line-height: normal;
 }
 
-.maincontent .cards .card > h5 {
+.maincontent .cards .card h5 {
 	color: #FFF;
 	font-size: 20px;
 	font-style: normal;
@@ -612,14 +639,14 @@ footer .right h5 {
 	margin-bottom: 15px;
 }
 
-.maincontent .cards .card > h3 span {
+.maincontent .cards .card h3 span {
 	background: linear-gradient(119deg, #41CEC5 0%, #BFFAED 43.75%, #0ACCB2 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.maincontent .cards .card > h4 span {
+.maincontent .cards .card h4 span {
 	color: #FFFFFF;
 	font-size: 22.194px;
 	font-style: normal;
@@ -627,7 +654,7 @@ footer .right h5 {
 	line-height: normal;
 }
 
-.maincontent .cards .card > h5 span {
+.maincontent .cards .card h5 span {
 	background: linear-gradient(122deg, #4C7CC9 0%, #6DA0F2 44.79%, #1542D7 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -725,15 +752,93 @@ footer .right h5 {
 	}
 }
 
+.maincontent .cards .card .time {
+    display: none;
+}
+
+.maincontent .cards .card .last .like h5 {
+    margin-bottom: 0;
+}
+
+.maincontent .cards .card .date h5 {
+    margin-bottom: 0;
+}
+
 @media screen and (max-width: 480px) {
+    .maincontent > h4 {
+        font-weight: 500;
+    }
+
 	.calendar-container {
 		margin-left: 0;
 		width: 100vw;
 	}
+
+    .maincontent .cards {
+        position: relative;
+        justify-content: end;
+    }
+
+    .maincontent .cards .card .time {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+
+    .maincontent .cards .card {
+        padding: 13px;
+        width: 220px;
+        height: 220px;
+    }
+
+    .maincontent .cards .card .imgs .img {
+        width: 57px;
+        height: 57px;
+    }
+
+    .maincontent .cards .card h2 {
+        font-size: 16px;
+    }
+
+    .maincontent .cards .card h3,
+    .maincontent .cards .card h4,
+    .maincontent .cards .card h5,
+    .maincontent .cards .card h3 span,
+    .maincontent .cards .card h4 span,
+    .maincontent .cards .card h5 span,
+    .maincontent .cards .card .date h4,
+    .maincontent .cards .card .date h5 {
+        font-size: 14px;
+    }
+
+    .maincontent .cards .card  h5 {
+        margin-bottom: 5px;
+    }
+
+    .maincontent .cards .card .date {
+        margin-bottom: 7px;
+    }
+
+    .maincontent .cards .card .last a,
+    .maincontent .cards .card .last .like h5 {
+        font-size: 10px;
+    }
+
+    .maincontent .cards .card .last a {
+        padding: 3px;
+    }
+
+    .maincontent .cards .card .last .like {
+        width: 40px;
+        height: 20px;
+    }
 }
 
 .maincontent .reg {
     display: none;
+    margin: 20px 0;
+    border-radius: 5px;
+    width: fit-content;
 }
 
 @media screen and (max-width: 500px) {

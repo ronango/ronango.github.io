@@ -764,6 +764,7 @@ footer .right h5 {
     }
 
     .maincontent .reg {
+        display: block;
         padding: 5px 10px;
         font-size: 12px;
         font-weight: 400;

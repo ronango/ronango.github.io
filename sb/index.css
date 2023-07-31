@@ -732,6 +732,10 @@ footer .right h5 {
 	}
 }
 
+.maincontent .reg {
+    display: none;
+}
+
 @media screen and (max-width: 500px) {
 	.startscreen {
         height: 675px;
@@ -757,6 +761,14 @@ footer .right h5 {
 
     .maincontent > h4 {
         margin-bottom: 40px;
+    }
+
+    .maincontent .reg {
+        padding: 5px 10px;
+        font-size: 12px;
+        font-weight: 400;
+        background-color: #212429;
+        color: #fff;
     }
 }
 

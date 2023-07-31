@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="table.css">
+	<title>Table</title>
+</head>
+<body>
+	<div class="topblock">
+		<header>
+			<a href="#"><img src="logo.png" alt="logo"></a>
+			<a href="table.html">
+				<div class="burger">
+				<div class="bline"></div>
+				<div class="sline"></div>
+				<div class="bline"></div>
+			</div>
+			</a>
+		</header>
+		<h1>РЕЙТИНГ <br/> СПИКЕРОВ</h1>
+	</div>
+	<style>
+  .table-container {
+    padding: 3rem 2rem;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .table-wrapper {
+    width: 860px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .table-row {
+    display: flex;
+  }
+
+  .table-cell {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+
+  .table-row:last-child {
+    height: 700px;
+  }
+
+  .table-row:last-child .table-cell {
+    border-bottom: none;
+  }
+
+  .table-cell:last-child {
+    border-right: none;
+  }
+
+  .table-cell:first-child {
+    text-align: center;
+    padding-right: 10px;
+  }
+
+  .table-row:first-child .table-cell:nth-child(2) {
+    padding: 10px 0;
+  }
+
+  .table-row:first-child .table-cell:nth-child(2) strong {
+    margin-left: 10px;
+  }
+
+  .table-row:not(.table-row:first-child) .table-cell:nth-child(2) {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: .5rem;
+  }
+
+  .table-row:not(.table-row:first-child) .table-cell {
+    font-weight: 600;
+    font-size: 14px;
+  }
+</style>
+
+<div class="table-container">
+  <div class="table-wrapper">
+    <div class="table-row">
+      <div class="table-cell" style="width: 60px;"><strong>№</strong></div>
+      <div class="table-cell" style="width: 340px;"><strong>Имя</strong></div>
+      <div class="table-cell" style="width: 200px;"><strong>Статус</strong></div>
+      <div class="table-cell" style="width: 160px;"><strong>кол-во<br>мер-ий</strong></div>
+      <div class="table-cell" style="width: 140px;"><strong>Лайки</strong></div>
+      <div class="table-cell" style="width: 160px;"><strong>Рейтинг</strong></div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell" style="width: 60px;"><strong>1</strong></div>
+      <div class="table-cell" style="width: 340px;">
+        <img src="/author.png" alt="">
+        <p>Игорь Манн</p>
+      </div>
+      <div class="table-cell" style="width: 200px;">Управляющий</div>
+      <div class="table-cell" style="width: 160px;">362</div>
+      <div class="table-cell" style="width: 140px;"><img src="/like.png" alt=""></div>
+      <div class="table-cell" style="width: 160px;">6555</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell" style="width: 60px;"><strong>2</strong></div>
+      <div class="table-cell" style="width: 340px;">
+        <img src="/author.png" alt="">
+        <p>Игорь Манн</p>
+      </div>
+      <div class="table-cell" style="width: 200px;">Амбассадор</div>
+      <div class="table-cell" style="width: 160px;">458</div>
+      <div class="table-cell" style="width: 140px;"><img src="/like.png" alt=""></div>
+      <div class="table-cell" style="width: 160px;">6555</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell" style="width: 60px;"><strong>3</strong></div>
+      <div class="table-cell" style="width: 340px;">
+        <img src="/author.png" alt="">
+        <p>Игорь Манн</p>
+      </div>
+      <div class="table-cell" style="width: 200px;">Амбассадор</div>
+      <div class="table-cell" style="width: 160px;">340</div>
+      <div class="table-cell" style="width: 140px;"><img src="/like.png" alt=""></div>
+      <div class="table-cell" style="width: 160px;">6555</div>
+    </div>
+    <div class="table-row">
+      <div class="table-cell" style="width: 60px;"></div>
+      <div class="table-cell" style="width: 340px;"></div>
+      <div class="table-cell" style="width: 200px;"></div>
+      <div class="table-cell" style="width: 160px;"></div>
+      <div class="table-cell" style="width: 140px;"></div>
+      <div class="table-cell" style="width: 160px;"></div>
+    </div>
+  </div>
+</div>
+	<footer>
+		<a href="index.html	"><img src="logo.png" alt="logo"></a>
+		<div class="right">
+			<a href="#">Добавить мероприятие</a>
+			<h5>Разработка сайта</h5>
+		</div>
+	</footer>
+</body>
+</html>

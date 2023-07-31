@@ -481,34 +481,6 @@ a {
 	width: 38px;
 }
 
-@media screen and (max-width: 500px) {
-	.startscreen {
-        height: 675px;
-		padding: 0px 40px;
-	}
-
-    .startscreen header {
-        margin-bottom: 30px;
-    }
-
-    .maincontent .online,
-    .maincontent .offline {
-        margin-bottom: 20px;
-    }
-
-    .maincontent .dateline {
-        margin-bottom: 0;
-    }
-
-    .maincontent .calendar-container {
-        margin-bottom: 50px;
-    }
-
-    .maincontent > h4 {
-        margin-bottom: 40px;
-    }
-}
-
 footer {
 	background: #212429;
 	display: flex;
@@ -758,6 +730,34 @@ footer .right h5 {
 		margin-left: 0;
 		width: 100vw;
 	}
+}
+
+@media screen and (max-width: 500px) {
+	.startscreen {
+        height: 675px;
+		padding: 0px 40px;
+	}
+
+    .startscreen header {
+        margin-bottom: 30px;
+    }
+
+    .maincontent .online,
+    .maincontent .offline {
+        margin-bottom: 20px;
+    }
+
+    .maincontent .dateline {
+        margin-bottom: 0;
+    }
+
+    .maincontent .calendar-container {
+        margin-bottom: 50px;
+    }
+
+    .maincontent > h4 {
+        margin-bottom: 40px;
+    }
 }
 
 .calendar {

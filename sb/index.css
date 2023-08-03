@@ -922,6 +922,10 @@ footer .right h5 {
 	color: #fff;
 }
 
+.calendar .day.str {
+    color: #383a3d;
+}
+
 .calendar .day.now {
 	background-color: #212429;
 }

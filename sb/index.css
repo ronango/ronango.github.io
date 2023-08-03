@@ -640,10 +640,7 @@ footer .right h5 {
 }
 
 .maincontent .cards .card h3 span {
-	background: linear-gradient(119deg, #b4ddda 0%, #fff 43.75%, #b4ddda 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background-color: #b4ddda;
 }
 
 .maincontent .cards .card h4 span {
@@ -655,10 +652,7 @@ footer .right h5 {
 }
 
 .maincontent .cards .card h5 span {
-	background: linear-gradient(122deg, #ffd6cb 0%, #fff 44.79%, #ffd6cb 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background-color: #ffd6cb;
 	font-size: 22.194px;
 	font-style: normal;
 	font-weight: 400;

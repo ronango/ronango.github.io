@@ -640,7 +640,7 @@ footer .right h5 {
 }
 
 .maincontent .cards .card h3 span {
-	background-color: #b4ddda;
+	color: #b4ddda;
 }
 
 .maincontent .cards .card h4 span {
@@ -652,7 +652,7 @@ footer .right h5 {
 }
 
 .maincontent .cards .card h5 span {
-	background-color: #ffd6cb;
+	color: #ffd6cb;
 	font-size: 22.194px;
 	font-style: normal;
 	font-weight: 400;

@@ -54,12 +54,18 @@ a {
 }
 
 .startscreen header a img {
-	height: 73px;
+	height: 70px;
+}
+
+@media screen and (max-width: 767px) {
+	.startscreen header a img {
+		height: 30px;
+	}
 }
 
 .startscreen header .burger {
-	width: 45px;
-	height: 45px;
+	width: 35px;
+	height: 35px;
 	border-radius: 50%;
 	background: white;
 	display: flex;
@@ -74,14 +80,14 @@ a {
 }
 
 .startscreen header .burger .bline {
-	width: 25px;
-	height: 2px;
+	width: 20px;
+	height: 1px;
 	background: black;
 }
 
 .startscreen header .burger .sline {
-	width: 20px;
-	height: 2px;
+	width: 15px;
+	height: 1px;
 	background: black;
 	margin-left: 5px;
 }
@@ -235,7 +241,7 @@ a {
 
 @media screen and (max-width: 1000px) {
 	.startscreen {
-		padding: 0px 80px;
+		padding: 0px 100px;
 	}
 	.startscreen h1 {
 		color: #FFF;
@@ -346,7 +352,7 @@ a {
 
 @media screen and (max-width: 600px) {
 	.maincontent {
-		padding: 0px 40px 80px 40px;
+		padding: 0px 80px 80px 80px;
 	}
 }
 
@@ -387,6 +393,10 @@ a {
     .startscreen .offline {
         display: block;
     }
+
+	.startscreen .offline {
+		left: 190px;
+	}
 }
 
 .maincontent #offline2 {
@@ -521,6 +531,12 @@ footer a img {
 	height: 75px;
 }
 
+@media screen and (max-width: 500px) {
+	footer a img {
+		height: 35px;
+	}
+}
+
 footer .right {
 	display: flex;
 	flex-direction: column;
@@ -552,11 +568,20 @@ footer .right h5 {
 		padding: 0 60px;
 	}
 	footer a img {
-		height: 50px;
+		height: 30px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.maincontent .cards {
+		width: 110%;
 	}
 }
 
 @media screen and (max-width: 700px) {
+	.calendar-container {
+		height: 100px;
+	}
 	footer {
 		padding: 0 20px;
 	}
@@ -836,9 +861,19 @@ footer .right h5 {
 }
 
 @media screen and (max-width: 500px) {
+
+	.calendar-container {
+		margin-left: -20vw;
+		width: 100vw;
+	}
+
 	.startscreen {
         height: 675px;
-		padding: 0px 40px;
+		padding: 0px 80px;
+	}
+
+	.startscreen h1 {
+		width: 120%;
 	}
 
     .startscreen header {
@@ -851,8 +886,13 @@ footer .right h5 {
     }
 
     .maincontent .dateline {
+		width: 120%;
         margin-bottom: 0;
     }
+
+	.maincontent .dateline .left {
+		gap: 26px;
+	}
 
     .maincontent .calendar-container {
         margin-bottom: 50px;
@@ -922,4 +962,17 @@ footer .right h5 {
 
 .calendar .day.now {
 	background-color: #212429;
+}
+
+@media screen and (max-width: 500px) {
+	.calendar .day {
+		flex: 0 0 33px;
+		height: 33px;
+		font-size: 20px;
+	}
+
+	.calendar .day.str,
+	.calendar .day.now {
+		height: 37px;
+	}
 }

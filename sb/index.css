@@ -580,7 +580,7 @@ footer .right h5 {
 
 @media screen and (max-width: 700px) {
 	.calendar-container {
-		height: 100px;
+		height: 50px;
 	}
 	footer {
 		padding: 0 20px;
@@ -974,5 +974,11 @@ footer .right h5 {
 	.calendar .day.str,
 	.calendar .day.now {
 		height: 37px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.calendar-container {
+		height: 100px;
 	}
 }
